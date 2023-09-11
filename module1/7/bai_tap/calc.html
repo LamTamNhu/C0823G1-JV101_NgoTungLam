@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<input type="number" id="a">
+<input type="number" id="b">
+<br><br>
+<button onclick="calc('Addition')">Addition(+)</button>
+<button onclick="calc('Subtraction')">Subtraction(-)</button>
+<button onclick="calc('Multiplication')">Multiplication(X)</button>
+<button onclick="calc('Division')">Division(/)</button>
+<p id="result"></p>
+
+<script>
+    function calc(typeofcal) {
+        let numa = +document.getElementById('a').value;
+        let numb = +document.getElementById('b').value;
+        let result;
+
+        if (typeofcal == "Addition") {
+            result = numa + numb;
+        }
+        if (typeofcal == "Subtraction") {
+            result = numa - numb;
+        }
+        if (typeofcal == "Multiplication") {
+            result = numa * numb;
+        }
+        if (typeofcal == "Division") {
+            result = numa / numb;
+        }
+        document.getElementById('result').innerText = "Result " + typeofcal + " " + result;
+    }
+</script>
+</body>
+</html>
