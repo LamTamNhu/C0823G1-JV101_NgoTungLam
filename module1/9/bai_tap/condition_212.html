@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="principal">Số tiền ban đầu</label>
+<input type="number" id="principal">
+<label for="rate">Lãi suất</label>
+<input type="number" id="rate">
+<label for="time">Số tháng</label>
+<input type="number" id="time">
+<button onclick="interestCalc()">Tính tiền nhận được</button>
+<p id="result"></p>
+
+<script>
+    var interest = 0;
+    var count = 1;
+
+    function interestCalc(compoundPrinciple) {
+        let principal = +document.getElementById("principal").value;
+        let rate = +document.getElementById("rate").value;
+        let time = +document.getElementById("time").value;
+
+        if (count >= time) {
+            document.getElementById("result").innerText = ("Tổng lãi " + compoundPrinciple + " VND");
+            return;
+        }
+        if (count === 1) {
+            compoundPrinciple = principal;
+        }
+        interest += compoundPrinciple * rate / 100;
+        compoundPrinciple += interest;
+        count++;
+        interestCalc(compoundPrinciple);
+    }
+</script>
+</body>
+</html>
