@@ -13,45 +13,23 @@
 <script>
     function billCalc() {
         let electricNum = +document.getElementById("electric").value;
-        let tier;
         let bill;
         if (electricNum < 0) {
             alert("Nhập lỗi");
             return;
         }
-        if (electricNum <= 50) {
-            tier = 1
-        } else if (electricNum <= 100) {
-            tier = 2;
-        } else if (electricNum <= 200) {
-            tier = 3;
-        } else if (electricNum <= 300) {
-            tier = 4;
-        } else if (electricNum <= 400) {
-            tier = 5;
+
+        if (electricNum <= 10) {
+            bill = electricNum * 2;
+        } else if (electricNum <= 20) {
+            bill = 20 + (electricNum - 10) * 3;
+        } else if (electricNum <= 30) {
+            bill = 50 + (electricNum - 20) * 4;
         } else {
-            tier = 6;
+            bill = 90 + (electricNum - 30) * 5;
         }
-        switch (tier) {
-            case 1:
-                bill = electricNum * 1678;
-                break;
-            case 2:
-                bill = electricNum * 1734;
-                break;
-            case 3:
-                bill = electricNum * 2014;
-                break;
-            case 4:
-                bill = electricNum * 2536;
-                break;
-            case 5:
-                bill = electricNum * 2834;
-                break;
-            case 6:
-                bill = electricNum * 2927;
-        }
-        document.getElementById("result").innerText = bill + " VND";
+
+        document.getElementById("result").innerText = bill + "k VND";
     }
 </script>
 </body>
