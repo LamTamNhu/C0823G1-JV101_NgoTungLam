@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="internalCall">Số phút gọi nội mạng</label>
+<input type="number" id="internalCall">
+<label for="externalCall">Số phút gọi liên mạng</label>
+<input type="number" id="externalCall">
+<label for="internalSms">Số tin sms nội mạng</label>
+<input type="number" id="internalSms">
+<label for="externalSms">Số tin sms liên mạng</label>
+<input type="number" id="externalSms">
+<button onclick="billCalc()">Tính tiền</button>
+<p id="result"></p>
+
+<script>
+    function billCalc() {
+        let internalCall = +document.getElementById("internalCall").value;
+        let externalCall = +document.getElementById("externalCall").value;
+        let internalSms = +document.getElementById("internalSms").value;
+        let externalSms = +document.getElementById("externalSms").value;
+        let result = internalCall * 880 + externalCall * 1280 + internalSms * 290 + externalSms * 350;
+
+        document.getElementById("result").innerText = result + " VND";
+    }
+</script>
+</body>
+</html>

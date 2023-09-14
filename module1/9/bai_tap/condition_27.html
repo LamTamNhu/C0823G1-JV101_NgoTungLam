@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+a<input type="number" id="a">
+b<input type="number" id="b">
+c<input type="number" id="c">
+<button onclick="quadCalc()">Tính phương trình bậc 2</button>
+<p id="result"></p>
+
+<script>
+    function quadCalc() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        let x1;
+        let x2;
+        let delta = b ** 2 - 4 * a * c;
+        if (a === 0) {
+            alert("a không thể bằng 0");
+            return;
+        }
+        if (delta < 0) {
+            document.getElementById("result").innerText = "Phương trình vô nghiệm";
+        } else if (delta === 0) {
+            x1 = -(b / 2 * a);
+            document.getElementById("result").innerText = "Phương trình có nghiệm kép x = " + x1;
+        } else {
+            x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            document.getElementById("result").innerText = "x1 = " + x1 + ", x2 = " + x2;
+        }
+    }
+</script>
+</body>
+</html>

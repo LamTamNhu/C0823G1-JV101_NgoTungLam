@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Chiều cao (m)<input type="number" id="height">
+Cân nặng (kg)<input type="number" id="weight">
+<button onclick="bmiCalc()" type="button">Check</button>
+
+<script>
+    function bmiCalc() {
+        let height = +document.getElementById("height").value;
+        let weight = +document.getElementById("weight").value;
+        let bmi = weight / (height ** 2)
+        if (bmi < 18.5) {
+            alert("Nhẹ cân");
+        } else if (bmi < 25) {
+            alert("Bình thường")
+        } else if (bmi < 30) {
+            alert("Nặng cân")
+        } else {
+            alert("Béo phì")
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<input type="number" id="num3">
+<button onclick="triangle()">Check</button>
+<p id="result"></p>
+
+<script>
+    function triangle() {
+        let a = +document.getElementById("num1").value;
+        let b = +document.getElementById("num2").value;
+        let c = +document.getElementById("num3").value;
+        let isTriangle;
+        /*if ((a > 0) &&
+            (b > 0) && (c > 0)) {
+            if (a + b > c) {
+                if (b + c > a) {
+                    if (a + c > b) {
+                        isTriangle = true;
+                    }
+                }
+            }
+        }*/
+        let check1 = a > 0;
+        let check2 = b > 0;
+        let check3 = c > 0;
+        let check4 = a + b > c;
+        let check5 = b + c > a;
+        let check6 = a + c > b;
+        isTriangle = check1 + check2 + check3 + check4 + check5 + check6;
+        if (isTriangle === 6) {
+            alert("Là 3 cạnh tam giác");
+        } else {
+            alert("Không phải 3 cạnh tam giác");
+        }
+        console.log(isTriangle);
+    }
+</script>
+</body>
+</html>

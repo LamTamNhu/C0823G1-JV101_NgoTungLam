@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<input type="number" id="num3">
+<button onclick="compare()">Compare</button>
+<p id="result"></p>
+
+<script>
+    function compare() {
+        let a = +document.getElementById("num1").value;
+        let b = +document.getElementById("num2").value;
+        let c = +document.getElementById("num3").value;
+        let max = a;
+        if (b > max) {
+            max = b
+        }
+        if (c > max) {
+            max = c
+        }
+        document.getElementById("result").innerText = max;
+    }
+
+</script>
+</body>
+</html>
