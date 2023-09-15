@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result = "";
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            result += "FizzBuzz ";
+            continue;
+        }
+        if (i % 3 === 0) {
+            result += "Fizz ";
+            continue;
+        }
+        if (i % 5 === 0) {
+            result += "Buzz ";
+            continue;
+        }
+        result += i + " ";
+    }
+    document.write(result);
+</script>
+</body>
+</html>

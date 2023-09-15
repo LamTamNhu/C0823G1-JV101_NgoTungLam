@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="guessNum()">Chơi</button>
+<script>
+    function guessNum() {
+        let max = +prompt("Số bạn muốn đoán trong khoảng lớn nhất là bao nhiêu?");
+        let randomNum = Math.floor(Math.random() * (max + 1));
+        console.log(randomNum);
+        let isWin = false;
+        for (let i = 1; i <= 3; i++) {
+            let guess = +prompt("Bạn đoán số nào?");
+            if (guess > randomNum) {
+                alert("Số bạn nhập lớn hơn");
+            } else if (guess < randomNum) {
+                alert("Số bạn nhập nhỏ hơn");
+            } else {
+                alert("Chúc mừng bạn đã thắng");
+                isWin = true;
+                break;
+            }
+        }
+        if (isWin === false) {
+            alert("Chúc mừng bạn đã thua");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 1;
+    let b = 1;
+    let result;
+    result = a + " " + b + " ";
+    for (let i = 3; i <= 20; i++) {
+        result += a + b + " ";
+        let temp = b;
+        b = a + b;
+        a = temp;
+        if (b % 5 === 0) {
+            alert(b + " chia hết cho 5");
+            break;
+        }
+    }
+    document.write(result);
+</script>
+</body>
+</html>
