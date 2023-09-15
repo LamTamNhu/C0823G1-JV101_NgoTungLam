@@ -8,20 +8,19 @@
 <script>
     let n = +prompt("Nhập n");
     let result = "";
-    if (n === 1) {
-        alert("N/A");
-    }
-    for (let i = 2; i < n; i++) {
-        let check = 2;
+    let currentNum = 2;
+    //counting amount of prime numbers found
+    for (let count = 1; count <= n; currentNum++) {
         let isPrime = true;
-        while (isPrime === true && check < i) {
-            if (i % check === 0) {
+        //check if currentNum a prime number
+        for (let i = 2; i < currentNum; i++) {
+            if (currentNum % i === 0) {
                 isPrime = false;
             }
-            check++;
         }
         if (isPrime === true) {
-            result += i + " ";
+            result += currentNum + " ";
+            count++;
         }
     }
     document.write(result);
