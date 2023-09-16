@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  document.write("<h1>Bài 5</h1>");
+  let a5 = [1, -10.2, -21, 120.2, 10, 4, 34.44, -4, -2, -5];
+  let countNegaInt = 0;
+  a5.map(function (check) {
+    if (Number.isInteger(check) === true && check < 0) {
+      countNegaInt++;
+    }
+  })
+  document.write(a5 + "<br>");
+  document.write(countNegaInt + " số nguyên âm <hr>");
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputString = '  lmao rofl 666 testing like this a   ';
+    let count = 1;
+    document.write(inputString + "<br>");
+    let x = 0;
+    //remove blanks at beginning of string
+    while (inputString[x] === " ") {
+        inputString[x] = "";
+        x++;
+    }
+
+    for (let i = 0; i < inputString.length - 1; i++) {
+        if (inputString[i] === " " && inputString[i + 1] !== " ") {
+            count++;
+        }
+    }
+    document.write(count + " characters in string");
+</script>
+</body>
+</html>

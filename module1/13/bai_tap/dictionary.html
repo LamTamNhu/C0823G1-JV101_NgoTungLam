@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="search">Nhập từ tiếng Anh</label>
+<input id="search" typeof="text">
+<button onclick="searchDict()" type="button">Tra cứu</button>
+<p id="result"></p>
+
+<script>
+    let eng = ["dog", "bird", "cat", "fish", "pig", "snake", "lion", "tiger"];
+    let vie = ["chó", "chim", "mèo", "cá", "heo", "rắn", "sư tử", "hổ"];
+
+    function searchDict() {
+        let word = document.getElementById("search").value;
+        for (let i = 0; i < eng.length; i++) {
+            if (eng[i] === word) {
+                document.getElementById("result").innerText = vie[i];
+            }
+        }
+    }
+</script>
+</body>
+</html>

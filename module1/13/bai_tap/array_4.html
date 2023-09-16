@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write("<h1>Bài 4</h1>");
+    let a4 = [1, 2, 3, 6, 723, 120, 10, 4, 34, 55, 62];
+    document.write(a4 + "<br>");
+    for (let i = 0; i < a4.length / 2; i++) {
+        let temp = a4[i];
+        a4[i] = a4[a4.length - i - 1];
+        a4[a4.length - i - 1] = temp;
+    }
+    document.write(a4 + "<hr>");
+</script>
+</body>
+</html>

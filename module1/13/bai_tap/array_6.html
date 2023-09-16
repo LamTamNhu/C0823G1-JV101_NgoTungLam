@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write("<h1>Bài 6</h1>");
+    let a6 = [1, -10, -21, 120, 10, 4, 34, -4, -2, -5];
+    document.write(a6 + "<br>");
+    let checkV = +prompt("Nhập số V");
+    let isIn = false;
+    for (let i = 0; i < a6.length; i++) {
+        if (checkV === a6[i]) {
+            document.write(checkV + " is in the array <br>");
+            isIn = true;
+            break;
+        }
+    }
+    if (isIn === false) {
+        document.write(checkV + " is not in the array <hr>");
+    }
+</script>
+</body>
+</html>
