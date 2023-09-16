@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="electric">Nhập kí điện</label>
+<input type="number" id="electric">
+<button onclick="billCalc()">Tính giá điện</button>
+<p id="result"></p>
+
+<script>
+    function billCalc() {
+        let electricNum = +document.getElementById("electric").value;
+        let bill;
+        if (electricNum < 0) {
+            alert("Nhập lỗi");
+            return;
+        }
+
+        if (electricNum <= 10) {
+            bill = electricNum * 2;
+        } else if (electricNum <= 20) {
+            bill = 20 + (electricNum - 10) * 3;
+        } else if (electricNum <= 30) {
+            bill = 50 + (electricNum - 20) * 4;
+        } else {
+            bill = 90 + (electricNum - 30) * 5;
+        }
+
+        document.getElementById("result").innerText = bill + "k VND";
+    }
+</script>
+</body>
+</html>

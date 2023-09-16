@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="saleNum">Nhập doanh số (triệu VND)</label>
+<input type="number" id="saleNum">
+<button onclick="commCalc()">Tính tiền hoa hồng</button>
+<p id="result"></p>
+
+<script>
+    function commCalc() {
+        let saleNum = +document.getElementById("saleNum").value;
+        let result;
+        let percent;
+        if (saleNum <= 50) {
+            result = saleNum * 0.05;
+            percent = 5;
+        } else if (saleNum <= 100) {
+            result = saleNum * 0.07;
+            percent = 7;
+        } else {
+            result = saleNum * 0.1;
+            percent = 10;
+        }
+        document.getElementById("result").innerText = result + " triệu VND (" + percent + " %)";
+    }
+</script>
+</body>
+</html>

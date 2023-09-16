@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập n");
+    let result = "";
+    let currentNum = 2;
+    //counting amount of prime numbers found
+    for (let count = 1; count <= n; currentNum++) {
+        let isPrime = true;
+        //check if currentNum a prime number
+        for (let i = 2; i < currentNum; i++) {
+            if (currentNum % i === 0) {
+                isPrime = false;
+            }
+        }
+        if (isPrime === true) {
+            result += currentNum + " ";
+            count++;
+        }
+    }
+    document.write(result);
+</script>
+</body>
+</html>

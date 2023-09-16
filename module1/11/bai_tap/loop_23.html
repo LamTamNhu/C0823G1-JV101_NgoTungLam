@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for (let i = 1; i <= 5; i++) {
+        for (let i2 = 1; i2 <= i; i2++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<hr>");
+
+    for (let i = 5; i >= 1; i--) {
+        for (let i2 = i; i2 >= 1; i2--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<hr>");
+
+    let result = "<table style='table-layout: fixed'>";
+    for (let i = 5; i >= 1; i--) {
+        result += "<tr>"
+        for (let i2 = 1; i2 <= 5; i2++) {
+            result += "<td>"
+            if (i2 >= i) {
+                result += "*";
+            }
+            result += "</td>";
+        }
+        result += "</tr>";
+    }
+    result+="</table>";
+    document.write(result);
+    document.write("<hr>");
+
+    let result2 = "<table style='table-layout: fixed'>";
+    for (let i = 5; i >= 1; i--) {
+        result2 += "<tr>"
+        for (let i2 = 1; i2 <= 5; i2++) {
+            result2 += "<td>"
+            if (i2 <= i) {
+                result2 += "*";
+            }
+            result2 += "</td>";
+        }
+        result2 += "</tr>";
+    }
+    result2+="</table>";
+    document.write(result2);
+</script>
+</body>
+</html>

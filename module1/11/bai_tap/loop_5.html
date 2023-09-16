@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 1;
+    let b = 1;
+    let result;
+    let sum=2;
+    result = a + " " + b + " ";
+    for (let i = 3; i <= 20; i++) {
+        //store b value in temp variable
+        let temp = b;
+        //b become the new fib number
+        b = a + b;
+        //add new fib number to display text
+        result += b + " ";
+        //sum of first 20 fib numbers
+        sum += b;
+        //a become old b
+        a = temp;
+    }
+    document.write(sum);
+</script>
+</body>
+</html>

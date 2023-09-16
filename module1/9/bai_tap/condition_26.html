@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập a<input type="number" id="a">
+Nhập b<input type="number" id="b">
+<button onclick="solve()">Giải phương trình bậc 1</button>
+<p id="result"></p>
+
+<script>
+    function solve() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let x;
+        if (a === 0 && b === 0) {
+            document.getElementById("result").innerText = "phương trình có vô số nghiệm";
+        } else if (a === 0 && b !== 0) {
+            document.getElementById("result").innerText = "phương trình vô nghiệm";
+        } else {
+            x = -b / a;
+            document.getElementById("result").innerText = "x = " + x;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let multiplyTable = "<table style=\"table-layout: fixed;width: 1000px;border-collapse: collapse;text-align: center\" border=\"1\" cellpadding=\"15\">"
+    for (let row = 1; row <= 9; row++) {
+        multiplyTable += "<tr>";
+        for (let col = 1; col <= 8; col++) {
+            multiplyTable += "<td>";
+            let a = col + 1;
+            multiplyTable += a + "x" + row + "=" + a * row + "</td>";
+        }
+        multiplyTable += "</tr>";
+    }
+    multiplyTable += "</table>";
+    document.write(multiplyTable);
+</script>
+</body>
+</html>
