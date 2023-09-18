@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập mảng ký tự");
+    let char = prompt("Nhập ký tự");
+    document.write(a + "<br>");
+    document.write(checkCharacter(a, char));
+
+    function checkCharacter(paragraph, character) {
+        let count = 0;
+        for (let i = 0; i < paragraph.length; i++) {
+            if (character === paragraph[i]) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            count = -1
+        }
+        ;
+        return (count);
+    }
+</script>
+</body>
+</html>

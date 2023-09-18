@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let testArray = [1, 3, 5, 44, 9, 13, 65, 82];
+    document.write(testArray + "<br>");
+    swap(testArray);
+    document.write(testArray);
+
+    function swap(a) {
+        for (let i = 0; i < Math.floor(a.length / 2); i++) {
+            let c = a[i];
+            a[i] = a[a.length - i - 1];
+            a[a.length - i - 1] = c;
+        }
+    }
+</script>
+</body>
+</html>

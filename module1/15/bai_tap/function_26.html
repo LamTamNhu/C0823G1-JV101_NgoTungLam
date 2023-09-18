@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result = checkIntPositive(+prompt("Nhập số"));
+    console.log(result);
+
+    function checkIntPositive(x) {
+        console.log(x);
+        if (Number.isInteger(x) && x >= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

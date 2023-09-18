@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    a[0] = +prompt("Nhập số đầu tiên");
+    a[1] = +prompt("Nhập số thứ hai");
+    console.log(a);
+    document.write(swap(a));
+    console.log(a);
+
+    function swap(numbers) {
+        let c = numbers[1];
+        numbers[1] = numbers[0];
+        numbers[0] = c;
+        return(numbers);
+        //console.log(numbers);
+    }
+</script>
+</body>
+</html>

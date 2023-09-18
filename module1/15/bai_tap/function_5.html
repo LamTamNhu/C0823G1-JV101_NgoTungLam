@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="starName">
+<button type="button" onclick="inputOutputStarName()">Tra</button>
+<p id="result"></p>
+<script>
+
+    let starList = ["Polaris", "Aldebaran", 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let horoscopeList = ['Ursa Minor', 'Taurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function inputOutputStarName() {
+        let name = document.getElementById("starName").value;
+        document.getElementById("result").innerText = findHoroscope(name);
+    }
+
+    function findHoroscope(star) {
+        for (let i = 0; i < starList.length; i++) {
+            if (star === starList[i]) {
+                return (horoscopeList[i]);
+            }
+        }
+        alert("Không tìm thấy chòm sao tương ứng");
+    }
+</script>
+</body>
+</html>

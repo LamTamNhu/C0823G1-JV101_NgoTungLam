@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkMinInteger() {
+        let a = [];
+        a[0] = +prompt("Nhập số nguyên đầu tiên");
+        a[1] = +prompt("Nhập số nguyên thứ hai");
+        a[2] = +prompt("Nhập số nguyên thứ ba");
+        let min = a[0];
+        for (let i = 1; i < 3; i++) {
+            if (Number.isInteger(a[i])) {
+                if (a[i] < min) {
+                    min = a[i];
+                }
+            } else {
+                alert("Không phải số nguyên");
+                return;
+            }
+        }
+        return(min);
+    }
+</script>
+</body>
+</html>
