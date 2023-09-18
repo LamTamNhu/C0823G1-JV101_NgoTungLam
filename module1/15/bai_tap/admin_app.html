@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="addName">
+<button onclick="addProduct()" type="button">Add</button>
+<p id="table"></p>
+<script>
+    let productList = ['Apple', 'Xiaomi', 'Sony'];
+    displayProducts(productList);
+
+    function displayProducts(productNames) {
+        let displayTable = "<table>";
+        for (let i = 0; i < productNames.length; i++) {
+            displayTable += '<tr>';
+            displayTable += '<td width="30px">' + (i + 1) + '</td>';
+            displayTable += `<td width="500px" id="${i}">${productNames[i]}</td>`;
+            displayTable += `<td width="100px"><button onclick="editProduct('${i}')">Edit</button></td>`;
+            displayTable += `<td width="100px"><button onclick="deleteProduct('${i}')">Delete</button></td>`;
+            displayTable += '</tr>';
+        }
+
+        displayTable += '</table>';
+        document.getElementById("table").innerHTML = displayTable;
+    }
+
+    function editProduct(editIndex) {
+        console.log('edit button pressed');
+        document.getElementById(editIndex).innerHTML = `<input type="text" id="editing"><button onclick="updateName(${editIndex})">OK</button>`;
+    }
+
+    function updateName(nameIndex) {
+        productList[nameIndex] = document.getElementById("editing").value;
+        displayProducts(productList);
+    }
+
+    function deleteProduct(deleteIndex) {
+        productList.splice(deleteIndex, 1);
+        displayProducts(productList);
+    }
+
+    function addProduct() {
+        let name = document.getElementById('addName').value;
+        productList.push(name);
+        displayProducts(productList);
+    }
+</script>
+</body>
+</html>
