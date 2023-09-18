@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  document.write("<h1>Bài 8</h1>");
+  let a8 = [1, 10, -21, 120, 10, 4, 34, -4, -2, 10];
+  document.write(a8 + "<br>");
+  let a8Result = [];
+  let iterateTimes = a8.length;
+  let i = 0;
+  while (i < iterateTimes) {
+    let max = a8[0];
+    //find smallest value in a8
+    for (let x = 0; x < a8.length; x++) {
+      if (a8[x] > max) {
+        max = a8[x];
+      }
+    }
+    //cut and paste that value into new array, increase i everytime this trigger
+    for (let x = 0; x < a8.length; x++) {
+      if (a8[x] === max) {
+        a8.splice(x, 1);
+        a8Result.push(max);
+        i++;
+      }
+    }
+  }
+  document.write(a8Result + "<hr>");
+</script>
+</body>
+</html>

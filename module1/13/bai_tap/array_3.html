@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write("<h1>Bài 3</h1>");
+    let a3 = [1, 2, 3, 6, 723, 120, 10, 4, 34, 55];
+    let max2 = a3[0];
+    let sum = a3[0];
+    for (let i = 1; i < a3.length; i++) {
+        sum += a3[i];
+        if (a3[i] > max2) {
+            max2 = a3[i];
+        }
+    }
+    let average = sum / a3.length;
+    document.write("Số lớn nhất là " + max2 + " giá trị trung bình " + average + "<hr>");
+</script>
+</body>
+</html>

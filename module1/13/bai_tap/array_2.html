@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write("<h1>Bài 2</h1>");
+    let a2 = [1, 2, 3, 6, 7, 120, 10, 4, 34, 55];
+    let max = a2[0];
+    let pos = 0;
+    for (let i = 1; i < a2.length; i++) {
+        if (a2[i] > max) {
+            max = a2[i];
+            pos = i;
+        }
+    }
+    document.write("Số lớn nhất là " + max + " tại vị trí " + pos + "<hr>");
+</script>
+</body>
+</html>
