@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<p id="text"></p>
+<script>
+    function Rectangle() {
+        this.height = 2;
+        this.width = 1;
+    }
+
+    Rectangle.prototype.getPerimeter = function () {
+        return 'Chu vi hình chữ nhật: ' + (this.height + this.width) * 2;
+    }
+    Rectangle.prototype.getArea = function () {
+        return 'Diện tích hình chữ nhật: ' + (this.height * this.width);
+    }
+    Rectangle.prototype.draw = function () {
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillRect(0, 0, this.width, this.height)
+    }
+
+    let a = new Rectangle();
+    a.width = 300;
+    a.height = 150;
+    a.draw();
+    console.log(a.getArea());
+    console.log(a.getPerimeter());
+    let textOut = document.getElementById('text');
+    textOut.innerHTML += a.getPerimeter() + '<br>';
+    textOut.innerHTML += a.getArea();
+
+</script>
+</body>
+</html>
