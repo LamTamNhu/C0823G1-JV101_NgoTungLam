@@ -16,7 +16,6 @@
         this.chargeStatus = false;
     }
 
-
     Mobile.prototype.onCheck = function () {
         if (this.onStatus === true) return "On"; else if (this.onStatus === false) return "Off";
     }
@@ -34,10 +33,10 @@
     Mobile.prototype.receiveMail = function (text) {
         this.memoryInbox.push(text);
     }
-    Mobile.prototype.sentMail = function (mailIndex, phoneIndex) {
+    Mobile.prototype.sentMail = function (mailIndex, phone) {
         let mailSending = this.memoryDraft[mailIndex];
         this.memorySent.push(mailSending);
-        phoneList[phoneIndex].receiveMail(mailSending);
+        phone.receiveMail(mailSending);
     }
     Mobile.prototype.viewInbox = function () {
         document.getElementById('screen').innerHTML ="<h1>Your Inbox</h1>"+ this.memoryInbox;
@@ -62,14 +61,11 @@
 
     let nokia = new Mobile();
     let iphone = new Mobile();
-    let phoneList=[];
-    phoneList.push(nokia,iphone);
-    console.log(phoneList);
 
     iphone.powerButton('On');
     nokia.powerButton('On');
     nokia.draftMail('Got a job for you 612');
-    nokia.sentMail(0, 1);
+    nokia.sentMail(0, iphone);
     iphone.viewInbox();
 </script>
 </body>
