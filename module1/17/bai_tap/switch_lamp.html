@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class SwitchButton {
+        constructor() {
+            this.status = false;
+            this.lamp = {};
+        }
+
+        connectToLamp(targetLamp) {
+            this.lamp = targetLamp;
+        }
+
+        switchOff() {
+            this.status = false;
+            this.lamp.turnOff();
+        }
+
+        switchOn() {
+            this.status = true;
+            this.lamp.turnOn();
+        }
+    }
+
+    class ElectricLamp {
+        constructor() {
+            this.status = false;
+        }
+
+        turnOff() {
+            console.log('Lamp is off');
+            this.status = false;
+        }
+
+        turnOn() {
+            console.log('Lamp is on');
+            this.status = true;
+        }
+    }
+
+    let lioaSwitch = new SwitchButton();
+    let xiaomiLamp = new ElectricLamp();
+    lioaSwitch.connectToLamp(xiaomiLamp);
+    for (let i = 1; i <= 10; i++) {
+        lioaSwitch.switchOff();
+        lioaSwitch.switchOn();
+    }
+</script>
+</body>
+</html>
