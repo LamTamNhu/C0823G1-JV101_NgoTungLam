@@ -6,16 +6,20 @@
 </head>
 <body>
 <script>
-  document.write("<h1>Bài 5</h1>");
-  let a5 = [1, -10.2, -21, 120.2, 10, 4, 34.44, -4, -2, -5];
-  let countNegaInt = 0;
-  a5.map(function (check) {
-    if (Number.isInteger(check) === true && check < 0) {
-      countNegaInt++;
+    document.write("<h1>Bài 5</h1>");
+    let a5 = 'Da Nang';
+    let count = 0;
+    for (let i = 0; i < a5.length; i++) {
+        switch (a5[i]) {
+            case 'a':
+            case 'i':
+            case 'u':
+            case 'e':
+            case 'o':
+                count++;
+        }
     }
-  })
-  document.write(a5 + "<br>");
-  document.write(countNegaInt + " số nguyên âm <hr>");
+    document.write(count + " số nguyên âm <hr>");
 </script>
 </body>
 </html>
