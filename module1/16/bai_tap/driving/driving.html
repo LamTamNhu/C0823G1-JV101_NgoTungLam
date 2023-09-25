@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+</head>
+<body onload="start()">
+<div>
+    <img style="translate: 300px 200px" src="cong_an.png" height="70" width="70" alt="cong_an">
+    <img id="car" src="car.png" width='78' height='150' alt="N/A">
+</div>
+<script>
+    let carPlayer = document.getElementById('car');
+    let speed = 2;
+    let throttle = 0.5;
+    let wheel = 90;
+    let moveHor = 50;
+    let moveVert = 10;
+    let carRotation = 90;
+    let sceneWidth = 1000;
+    let sceneHeight = 500;
+
+    carPlayer.style.rotate = '90deg';
+
+    function update() {
+        if (carRotation < 0) {
+            carRotation += 360;
+        } else if (carRotation >= 360) {
+            carRotation -= 360;
+        }
+        console.log('position' + moveHor + ' - ' + moveVert);
+        console.log('rotation' + carRotation);
+
+        carPlayer.style.rotate = `${carRotation}deg`;
+        let checkX = moveHor;
+        let checkY = moveVert;
+        switch (carRotation) {
+            case 0:
+                checkY = moveVert - speed;
+                break;
+            case 90:
+                checkX = moveHor + speed;
+                break;
+            case 180:
+                checkY = moveVert + speed;
+                break;
+            case 270:
+                checkX = moveHor - speed;
+        }
+        if (checkX < 30 || checkX > sceneWidth || checkY < 0 || checkY > sceneHeight) {
+            console.log('Hit wall');
+            return;
+        }
+        moveHor = checkX;
+        moveVert = checkY;
+        //Update pos
+        carPlayer.style.translate = `${moveHor}px ${moveVert}px`;
+    }
+
+    function keyProcess(evt) {
+        switch (evt.key) {
+            case 'ArrowUp':
+                if (speed < 5) speed += throttle;
+                break;
+            case 'ArrowDown':
+                if (speed > -5) speed -= throttle;
+                break;
+            case 'ArrowLeft':
+                carRotation -= wheel;
+                break;
+            case 'ArrowRight':
+                carRotation += wheel;
+        }
+    }
+
+    function start() {
+        addEventListener('keydown', keyProcess);
+        setInterval(update, 10);
+    }
+</script>
+</body>
+</html>
