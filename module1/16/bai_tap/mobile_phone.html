@@ -39,7 +39,7 @@
         phone.receiveMail(mailSending);
     }
     Mobile.prototype.viewInbox = function () {
-        document.getElementById('screen').innerHTML ="<h1>Your Inbox</h1>"+ this.memoryInbox;
+        document.getElementById('screen').innerHTML = "<h1>Your Inbox</h1>" + this.memoryInbox;
     }
     Mobile.prototype.viewSent = function () {
         document.getElementById('screen').innerText = this.memorySent;
@@ -54,9 +54,8 @@
                 return;
             }
             this[func](arguments[1], arguments[2]);
-        } else {
-            alert('Điện thoại chưa bật');
-        }
+        } else alert('Điện thoại chưa bật');
+
     }
 
     let nokia = new Mobile();
@@ -64,9 +63,12 @@
 
     iphone.powerButton('On');
     nokia.powerButton('On');
-    nokia.draftMail('Got a job for you 612');
-    nokia.sentMail(0, iphone);
-    iphone.viewInbox();
+    console.log(nokia.batteryStatus);
+    nokia.preRunCheck('draftMail', 'Got a job for you 612');
+    console.log(nokia.batteryStatus);
+    nokia.preRunCheck('sentMail', 0, iphone);
+    console.log(nokia.batteryStatus);
+    iphone.preRunCheck('viewInbox');
 </script>
 </body>
 </html>
