@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ball</title>
+    <style>
+        h1 {
+            color: green;
+        }
+
+        canvas {
+            background-color: black;
+            position: absolute;
+            /*width: 1000px;*/
+            /*height: 500px;*/
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<script>
+
+
+    function display() {
+        draw.clearRect(0, 0, canvas.width, canvas.height);
+        draw.beginPath();
+        draw.fillStyle = `rgb(${Math.random() * 255},${Math.random() * 255},0)`;
+        draw.fill();
+    }
+
+    let gameBoard = {
+        width: 1000,
+        height: 500,
+    }
+    let canvas = document.getElementById('canvas');
+    canvas.width = gameBoard.width;
+    canvas.height = gameBoard.height;
+    let ball = {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        speedX: 15,
+        speedY: -20,
+        radius: 15,
+
+        move() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+        },
+
+        hitCheck() {
+            if (this.x + this.speedX < 0 || this.x + this.speedX > canvas.width) {
+                this.speedX = 0 - this.speedX;
+            }
+            if (this.y + this.speedY < 0 || this.y + this.speedY > canvas.height) {
+                this.speedY = 0 - this.speedY;
+            }
+        }
+    }
+
+    let bar = {
+        width: 50,
+        x: 100,
+
+        move() {
+        },
+    }
+
+    let draw = canvas.getContext('2d');
+
+</script>
+</body>
+</html>
