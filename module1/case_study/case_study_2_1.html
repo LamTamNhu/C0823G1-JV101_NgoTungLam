@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id='table'></div>
+<script>
+    let h = +prompt('Nhập chiều cao');
+    let table = `<table style="table-layout: fixed">`;
+    for (let i = 0; i < h; i++) {
+        table += `<tr>`
+        for (let j = 0; j <= i; j++) {
+            table += `<td>`
+            if (j === i || j === h || j === 0 || i === h - 1) {
+                table += '*'
+            } else table += ' '
+            table += `</td>`
+        }
+        table += `</tr>`
+    }
+    table += `</table>`;
+    console.log(table);
+    document.getElementById('table').innerHTML = table;
+
+</script>
+</body>
+</html>

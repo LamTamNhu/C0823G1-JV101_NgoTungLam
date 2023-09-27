@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="result" style="text-align: center"></div>
+<script>
+    let h = +prompt('Nhập chiều cao');
+    let result = '*<br>';
+    let increment = '***';
+    for (let i = 2; i <= h; i++) {
+        result += increment + '<br>';
+        increment += '**'
+    }
+    document.getElementById('result').innerHTML = result;
+
+</script>
+</body>
+</html>

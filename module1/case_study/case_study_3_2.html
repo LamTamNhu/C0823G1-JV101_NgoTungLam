@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [7, 2, 5, 3, 5, 6, 3];
+    let b = [7, 2, 5, 4, 6, 11, 3, 5, 3];
+
+    function missingValue(array1, array2) {
+        let result = [];
+        array1.sort(function (a, b) {
+            return a - b
+        });
+        array2.sort(function (a, b) {
+            return a - b
+        });
+
+        for (let i = 0; i < array2.length; i++) {
+            if (array2[i] === array2[i - 1]) continue;
+            let flag = false;
+            for (let j = 0; j < array1.length; j++) {
+                if (array2[i] === array1[j]) {
+                    flag = true;
+                    break;
+                }
+                if (array1[j] > array2[i]) break;
+            }
+            if (!flag && array2[i]) {
+                result.push(array2[i]);
+            }
+        }
+        return result;
+    }
+
+    console.log(missingValue(a, b));
+</script>
+</body>
+</html>

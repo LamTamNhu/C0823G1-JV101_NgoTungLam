@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let grossIncome = +prompt('Nhập số lương (đơn vị triệu)');
+    let netIncome = 0;
+    if (grossIncome >= 15) {
+        netIncome = grossIncome * 80 / 100;
+        document.write('Lương thực là: ' + netIncome + ' triệu VND với ' + grossIncome * 20 / 100 + ' triệu VND tiền thuế');
+    } else if (grossIncome >= 7) {
+        netIncome = grossIncome * 90 / 100;
+        document.write('Lương thực là: ' + netIncome + ' triệu VND với ' + grossIncome * 10 / 100 + ' triệu VND tiền thuế');
+    } else {
+        netIncome = grossIncome * 95 / 100;
+        document.write('Lương thực là: ' + netIncome + ' triệu VND với ' + grossIncome * 5 / 100 + ' triệu VND tiền thuế');
+    }
+</script>
+</body>
+</html>

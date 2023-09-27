@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1, 2, 3, 8, 10];
+
+    function prefixSums(array) {
+        let b = [];
+        b.push(array[0]);
+        for (let i = 1; i < array.length; i++) {
+            b.push(array[i] + b[i - 1]);
+        }
+        return b;
+    }
+
+    console.log(prefixSums(a));
+</script>
+</body>
+</html>
