@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fixString(a) {
+        document.write(a + '<br>');
+        let trimmedString = a.trim();
+        let resultString = '';
+        resultString += trimmedString[0].toUpperCase();
+        for (let i = 1; i < trimmedString.length; i++) {
+            if (trimmedString[i] === ' ' && trimmedString[i + 1] === ' ') continue;
+
+            if (trimmedString[i - 1] === ' ') {
+                resultString += trimmedString[i].toUpperCase();
+            } else resultString += trimmedString[i].toLowerCase();
+        }
+        document.write(resultString + '<br>');
+        return resultString;
+    }
+
+    function findLongest(inputString) {
+        let startIndex = 0;
+        let result = '';
+        let currentCount = 0;
+        let compareCount = 0;
+        for (let i = 0; i < inputString.length; i++) {
+            if (inputString[i] === ' ' || i === inputString.length - 1) {
+                if (compareCount > currentCount) {
+                    currentCount = compareCount;
+                    let tempWord = '';
+                    for (let j = startIndex; j < i; j++) {
+                        tempWord += inputString[j];
+                    }
+                    result = tempWord;
+                }
+
+                compareCount = 0;
+                startIndex = i + 1;
+            } else {
+                compareCount++;
+            }
+        }
+        document.write('Longest word: ' + result + '<br>')
+    }
+
+    function main(a) {
+        let fixed = fixString(a);
+        findLongest(fixed);
+    }
+
+    main('tRuong    TaN   HAI');
+</script>
+</body>
+</html>

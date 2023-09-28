@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function differentSymbolsNaive(s) {
+        let result = '';
+        for (let i = 0; i < s.length; i++) {
+            let isDiff = false;
+            for (let j = 0; j < result.length; j++) {
+                if (s[i] === result[j]) {
+                    isDiff = true;
+                    break;
+                }
+            }
+            if (!isDiff) result += s[i];
+        }
+        return result;
+    }
+
+    function commonCharacterCount(s1, s2) {
+        let result = 0;
+        s1 = differentSymbolsNaive(s1);
+        console.log(s1);
+        for (let i = 0; i < s1.length; i++) {
+            for (let j = 0; j < s2.length; j++) {
+                if (s1[i] === s2[j]) {
+                    result++;
+                    break;
+                }
+
+            }
+        }
+        return result;
+    }
+
+    console.log(commonCharacterCount('fbabc', 'adcaa'))
+</script>
+</body>
+</html>

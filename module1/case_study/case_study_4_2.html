@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function differentSymbolsNaive(s) {
+        let result = '';
+        for (let i = 0; i < s.length; i++) {
+            let isDiff = false;
+            for (let j = 0; j < result.length; j++) {
+                if (s[i] === result[j]) {
+                    isDiff = true;
+                    break;
+                }
+            }
+            if (!isDiff) result += s[i];
+        }
+        return result.length;
+    }
+    console.log(differentSymbolsNaive('cabca'));
+</script>
+</body>
+</html>

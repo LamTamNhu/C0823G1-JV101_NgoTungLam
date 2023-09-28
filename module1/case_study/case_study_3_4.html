@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputNum;
+    let sum = 0;
+    do {
+        inputNum = prompt('Nhập số STT để order:\n' +
+            '1. Cafe\n' +
+            '2. Cam vắt\n' +
+            '3. Nước ép cà rốt\n' +
+            '4. Nước ép cà chua\n' +
+            '5. Nước lọc\n' +
+            '6. Nước dừa\n' +
+            'Nhập số 7 để kết thúc order');
+        let amount = 0;
+        switch (inputNum) {
+            case '1':
+                amount = +prompt('Cafe giá 30k, bạn order bao nhiêu ly?');
+                sum += 30 * amount;
+                break;
+            case '2':
+                amount = +prompt('Cam vắt giá 15k, bạn order bao nhiêu ly?');
+                sum += 15 * amount;
+                break;
+            case '3':
+                amount = +prompt('Nước ép cà rốt giá 15k, bạn order bao nhiêu ly?');
+                sum += 15 * amount;
+                break;
+            case '4':
+                amount = +prompt('Nước ép cà chua giá 15k, bạn order bao nhiêu ly?');
+                sum += 15 * amount;
+                break;
+            case '5':
+                amount = +prompt(' Nước lọc giá 100k, bạn order bao nhiêu ly?');
+                sum += 100 * amount;
+                break;
+            case '6':
+                amount = +prompt('Nước dừa giá 20k, bạn order bao nhiêu ly?');
+                sum += 20 * amount;
+                break;
+            case '7':
+                break;
+            default:
+                alert('Nhập sai');
+        }
+
+    } while (inputNum !== '7')
+    document.write('Bill của bạn là: ' + sum + 'k');
+</script>
+</body>
+</html>
