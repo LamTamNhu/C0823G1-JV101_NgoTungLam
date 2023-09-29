@@ -21,7 +21,8 @@
         let check2 = newStudent.id.slice(3);
         // console.log(check1);
         // console.log(check2);
-        if (check1 !== 'HV-' || isNaN(parseInt(check2)) || parseInt(check2) < 0 || check2.length > 4) {
+        const regex= new RegExp(/\D/);
+        if (check1 !== 'HV-' || regex.test(check2) || parseInt(check2) < 0 || check2.length > 4) {
             alert('id nhập sai');
             return;
         }
@@ -107,13 +108,13 @@
         <th>Ngày sinh</th>
     </tr>`;
         for (let i = 0; i < classList.length; i++) {
-            displayTable += `<tr>`;
-            displayTable += `<td>${classList[i].id}</td>`;
-            displayTable += `<td>${classList[i].name}</td>`;
-            displayTable += `<td>${classList[i].classRoom}</td>`;
-            displayTable += `<td>${classList[i].email}</td>`;
-            displayTable += `<td>${classList[i].birthDay}</td>`;
-            displayTable += `</tr>`;
+            displayTable += `<tr>
+                                <td>${classList[i].id}</td>
+                                <td>${classList[i].name}</td>
+                                <td>${classList[i].classRoom}</td>
+                                <td>${classList[i].email}</td>
+                                <td>${classList[i].birthDay}</td>
+                            </tr>`;
         }
         displayTable += `</table>`
         document.getElementById('display').innerHTML = displayTable;
