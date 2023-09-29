@@ -88,8 +88,8 @@
             iTemp--;
             jTemp++;
         }
-        iTemp = i++;
-        jTemp = j--;
+        iTemp = i + 1;
+        jTemp = j - 1;
         while (playerTracker[iTemp][jTemp] === player) {
             count++;
             iTemp++;
