@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="addStudent()">Thêm mới học viên</button>
+<button type="button" onclick="editStudent()">Sửa thông tin học viên</button>
+<button type="button" onclick="deleteStudent()">Xóa học viên</button>
+<br><br>
+<div id="display"></div>
+<script>
+    function addStudent() {
+        let newStudent = new Student(prompt('Nhập id'), prompt('Nhập tên'), prompt('Nhập lớp'),
+            prompt('Nhập email'), prompt('Nhập ngày sinh'), +prompt('Nhập module'));
+        console.log(newStudent);
+
+        //check
+        let check1 = newStudent.id.slice(0, 3);
+        let check2 = newStudent.id.slice(3);
+        // console.log(check1);
+        // console.log(check2);
+        if (check1 !== 'HV-' || isNaN(parseInt(check2)) || parseInt(check2) < 0 || check2.length > 4) {
+            alert('id nhập sai');
+            return;
+        }
+        let check3 = newStudent.id;
+        for (let i = 0; i < classList.length; i++) {
+            if (classList[i].id === check3) {
+                alert('Trùng id');
+                return;
+            }
+        }
+
+        if (newStudent.name.length > 50) {
+            alert('Tên học viên chỉ được tối đa 50 ký tự');
+            return;
+        }
+        if (newStudent.module > 6 || newStudent.module < 1) {
+            alert('Module chỉ từ 1 đến 6');
+            return;
+        }
+
+        let splitDate = newStudent.birthDay.split('/');
+        let dateCheck = new Date(`${splitDate[1]}/${splitDate[0]}/${splitDate[2]}`);
+        console.log(dateCheck);
+        console.log(isNaN(dateCheck));
+        if (isNaN(dateCheck)) {
+            alert('Nhập sai ngày sinh');
+            return;
+        }
+
+        classList.push(newStudent);
+        display();
+    }
+
+    function editStudent() {
+        let idCheck = prompt('Nhập id học viên cần sửa');
+        let isExist = false;
+        for (let i = 0; i < classList.length; i++) {
+            if (classList[i].id === idCheck) {
+                classList[i] = new Student(classList[i].id, prompt('Nhập tên'), prompt('Nhập lớp'),
+                    prompt('Nhập email'), prompt('Nhập ngày sinh'), +prompt('Nhập module'));
+                isExist = true;
+            }
+        }
+        if (!isExist) alert('Mã học viên không tồn tại');
+        display();
+    }
+
+    function deleteStudent() {
+        let idCheck = prompt('Nhập id học viên cần sửa');
+        let isExist = false;
+        for (let i = 0; i < classList.length; i++) {
+            if (classList[i].id === idCheck) {
+                if (confirm(`Xóa học viên ${classList[i].name}`)) {
+                    classList.splice(i, 1);
+                }
+                isExist = true;
+            }
+        }
+
+        if (!isExist) alert('Mã học viên không tồn tại');
+        display();
+    }
+
+    class Student {
+        constructor(id, name, classRoom, email, birthDay, module) {
+            this.id = id;
+            this.name = name;
+            this.classRoom = classRoom;
+            this.email = email;
+            this.birthDay = birthDay;
+            this.module = module;
+        }
+
+    }
+
+    function display() {
+        let displayTable = `<table style="table-layout: fixed;border-color: lightgray" border="1px" cellpadding="8px" cellspacing="0px">
+    <tr>
+        <th>Mã học viên</th>
+        <th>Tên</th>
+        <th>Lớp</th>
+        <th>Email</th>
+        <th>Ngày sinh</th>
+    </tr>`;
+        for (let i = 0; i < classList.length; i++) {
+            displayTable += `<tr>`;
+            displayTable += `<td>${classList[i].id}</td>`;
+            displayTable += `<td>${classList[i].name}</td>`;
+            displayTable += `<td>${classList[i].classRoom}</td>`;
+            displayTable += `<td>${classList[i].email}</td>`;
+            displayTable += `<td>${classList[i].birthDay}</td>`;
+            displayTable += `</tr>`;
+        }
+        displayTable += `</table>`
+        document.getElementById('display').innerHTML = displayTable;
+    }
+
+    let nguyenVanA = new Student('HV-0001', 'Nguyễn Văn A', 'C1022G1', 'nguyenvana@gmail.com', '01/01/2004', 1);
+    let nguyenThiB = new Student('HV-0002', 'Nguyễn Thị B', 'C1022G1', 'nguyenthib@gmail.com', '02/02/2004', 1);
+    let classList = [nguyenVanA, nguyenThiB];
+    display();
+
+</script>
+</body>
+</html>
