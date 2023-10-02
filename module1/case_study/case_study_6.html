@@ -8,81 +8,105 @@
 <button type="button" onclick="addStudent()">Thêm mới học viên</button>
 <button type="button" onclick="editStudent()">Sửa thông tin học viên</button>
 <button type="button" onclick="deleteStudent()">Xóa học viên</button>
+<div id="input"></div>
 <br><br>
 <div id="display"></div>
 <script>
-    function addStudent() {
-        let newStudent = new Student(prompt('Nhập id'), prompt('Nhập tên'), prompt('Nhập lớp'),
-            prompt('Nhập email'), prompt('Nhập ngày sinh'), +prompt('Nhập module'));
-        console.log(newStudent);
-
-        //check
-        let check1 = newStudent.id.slice(0, 3);
-        let check2 = newStudent.id.slice(3);
-        // console.log(check1);
-        // console.log(check2);
-        const regex= new RegExp(/\D/);
-        if (check1 !== 'HV-' || regex.test(check2) || parseInt(check2) < 0 || check2.length > 4) {
-            alert('id nhập sai');
-            return;
+    function idCheck(id, isEdit) {
+        if (id <= 0 || id > 9999 || isNaN(id)) {
+            alert('Mã học viên nhập sai');
+            return false;
         }
-        let check3 = newStudent.id;
-        for (let i = 0; i < classList.length; i++) {
-            if (classList[i].id === check3) {
-                alert('Trùng id');
-                return;
+        if (!isEdit) {
+            for (let i = 0; i < classList.length; i++) {
+                if (classList[i].id === id) {
+                    alert('Trùng id');
+                    return false;
+                }
             }
         }
+        return true;
+    }
 
-        if (newStudent.name.length > 50) {
+    function nameCheck(name) {
+        if (name.length < 1) {
+            alert('Không được để trống');
+            return false;
+        }
+        if (name.length > 50) {
             alert('Tên học viên chỉ được tối đa 50 ký tự');
-            return;
+            return false;
         }
-        if (newStudent.module > 6 || newStudent.module < 1) {
-            alert('Module chỉ từ 1 đến 6');
-            return;
-        }
+        return true;
+    }
 
-        let splitDate = newStudent.birthDay.split('/');
+    function moduleCheck(module) {
+        if (module > 6 || module < 1 || isNaN(module)) {
+            alert('Module chỉ từ 1 đến 6');
+            return false;
+        }
+        return true;
+    }
+
+    function birthdayCheck(birthday) {
+        let splitDate = birthday.split('/');
         let dateCheck = new Date(`${splitDate[1]}/${splitDate[0]}/${splitDate[2]}`);
         console.log(dateCheck);
         console.log(isNaN(dateCheck));
         if (isNaN(dateCheck)) {
             alert('Nhập sai ngày sinh');
-            return;
+            return false;
         }
+        return true;
+    }
 
-        classList.push(newStudent);
+    function addStudent() {
+        let newId = +prompt('Nhập mã học viên (chỉ nhập số)', classList[classList.length - 1].id + 1);
+        if (!idCheck(newId, false)) return;
+        let newName = prompt('Nhập tên (tối đa 50 ký tự)');
+        if (!nameCheck(newName)) return;
+        let newClass = prompt('Nhập lớp');
+        let newEmail = prompt('Nhập email');
+        let newBirthday = prompt('Nhập ngày sinh (dd/mm/yy)')
+        if (!birthdayCheck(newBirthday)) return;
+        let newModule = prompt('Nhập module (từ 1-6)');
+        if (!moduleCheck(newModule)) return;
+
+        classList.push(new Student(newId, newName, newClass, newEmail, newBirthday, newModule));
         display();
     }
 
-    function editStudent() {
-        let idCheck = prompt('Nhập id học viên cần sửa');
-        let isExist = false;
+    function checkIfIdExist(checkingId) {
         for (let i = 0; i < classList.length; i++) {
-            if (classList[i].id === idCheck) {
-                classList[i] = new Student(classList[i].id, prompt('Nhập tên'), prompt('Nhập lớp'),
-                    prompt('Nhập email'), prompt('Nhập ngày sinh'), +prompt('Nhập module'));
-                isExist = true;
-            }
+            if (classList[i].id == checkingId) return i;
         }
-        if (!isExist) alert('Mã học viên không tồn tại');
+        alert('Mã học viên không tồn tại');
+        return -1;
+    }
+
+    function editStudent() {
+        let editingId = +prompt('Nhập id học viên cần sửa');
+        if (checkIfIdExist(editingId) == -1) return;
+        console.log('passed');
+        let editingPosition = checkIfIdExist(editingId);
+        let newId = +prompt('Nhập mã học viên (chỉ nhập số)', classList[editingPosition].id);
+        if (!idCheck(newId, true)) return;
+        let newName = prompt('Nhập tên (tối đa 50 ký tự)', classList[editingPosition].name);
+        if (!nameCheck(newName)) return;
+        let newClass = prompt('Nhập lớp', classList[editingPosition].classRoom);
+        let newEmail = prompt('Nhập email', classList[editingPosition].email);
+        let newBirthday = prompt('Nhập ngày sinh (dd/mm/yy)', classList[editingPosition].birthDay)
+        if (!birthdayCheck(newBirthday)) return;
+        let newModule = prompt('Nhập module (từ 1-6)', classList[editingPosition].module);
+        if (!moduleCheck(newModule)) return;
+        classList[editingPosition] = new Student(newId, newName, newClass, newEmail, newBirthday, newModule);
         display();
     }
 
     function deleteStudent() {
-        let idCheck = prompt('Nhập id học viên cần sửa');
-        let isExist = false;
-        for (let i = 0; i < classList.length; i++) {
-            if (classList[i].id === idCheck) {
-                if (confirm(`Xóa học viên ${classList[i].name}`)) {
-                    classList.splice(i, 1);
-                }
-                isExist = true;
-            }
-        }
-
-        if (!isExist) alert('Mã học viên không tồn tại');
+        let idCheck = +prompt('Nhập id học viên cần xóa');
+        if (checkIfIdExist(idCheck) == -1) return;
+        classList.splice(checkIfIdExist(idCheck), 1);
         display();
     }
 
@@ -109,7 +133,10 @@
     </tr>`;
         for (let i = 0; i < classList.length; i++) {
             displayTable += `<tr>
-                                <td>${classList[i].id}</td>
+                                <td>HV-${classList[i].id.toLocaleString('en-us', {
+                minimumIntegerDigits: 4,
+                useGrouping: false
+            })}</td>
                                 <td>${classList[i].name}</td>
                                 <td>${classList[i].classRoom}</td>
                                 <td>${classList[i].email}</td>
@@ -120,8 +147,8 @@
         document.getElementById('display').innerHTML = displayTable;
     }
 
-    let nguyenVanA = new Student('HV-0001', 'Nguyễn Văn A', 'C1022G1', 'nguyenvana@gmail.com', '01/01/2004', 1);
-    let nguyenThiB = new Student('HV-0002', 'Nguyễn Thị B', 'C1022G1', 'nguyenthib@gmail.com', '02/02/2004', 1);
+    let nguyenVanA = new Student(1, 'Nguyễn Văn A', 'C1022G1', 'nguyenvana@gmail.com', '01/01/2004', 1);
+    let nguyenThiB = new Student(2, 'Nguyễn Thị B', 'C1022G1', 'nguyenthib@gmail.com', '02/02/2004', 1);
     let classList = [nguyenVanA, nguyenThiB];
     display();
 
