@@ -12,17 +12,15 @@
 <br><br>
 <div id="display"></div>
 <script>
-    function idCheck(id, isEdit) {
+    function idCheck(id) {
         if (id <= 0 || id > 9999 || isNaN(id)) {
             alert('Mã học viên nhập sai');
             return false;
         }
-        if (!isEdit) {
-            for (let i = 0; i < classList.length; i++) {
-                if (classList[i].id === id) {
-                    alert('Trùng id');
-                    return false;
-                }
+        for (let i = 0; i < classList.length; i++) {
+            if (classList[i].id === id) {
+                alert('Trùng id');
+                return false;
             }
         }
         return true;
@@ -62,7 +60,7 @@
 
     function addStudent() {
         let newId = +prompt('Nhập mã học viên (chỉ nhập số)', classList[classList.length - 1].id + 1);
-        if (!idCheck(newId, false)) return;
+        if (!idCheck(newId)) return;
         let newName = prompt('Nhập tên (tối đa 50 ký tự)');
         if (!nameCheck(newName)) return;
         let newClass = prompt('Nhập lớp');
