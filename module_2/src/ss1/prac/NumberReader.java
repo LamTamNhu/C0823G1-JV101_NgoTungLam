@@ -9,7 +9,6 @@ public class NumberReader {
                 return "";
             case 1:
                 return "one";
-
             case 2:
                 return "two";
             case 3:
@@ -26,11 +25,34 @@ public class NumberReader {
                 return "eight";
             case 9:
                 return "nine";
+            case 10:
+                return "ten";
+            case 11:
+                return "eleven";
+            case 12:
+                return "twelve";
+            case 13:
+                return "thirteen";
+            case 14:
+                return "fourteen";
+            case 15:
+                return "fifteen";
+            case 16:
+                return "sixteen";
+            case 17:
+                return "seventeen";
+            case 18:
+                return "eighteen";
+            case 19:
+                return "nineteen";
         }
         return "wrong input";
     }
 
     private static String convertTens(int num) {
+        if (num < 20) {
+            return "";
+        }
         if (num < 30) {
             return "twenty ";
         } else if (num < 40) {
@@ -52,83 +74,28 @@ public class NumberReader {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your weight:");
+        System.out.println("Enter your number:");
         int num = Integer.parseInt(scanner.nextLine());
         if (num <= 0) {
-            System.out.println("Weight must be more than 0");
+            System.out.println("Number must be more than 0");
             return;
         }
         if (num > 999) {
-            System.out.println("Weight must be less than 999");
+            System.out.println("Number must be less than 999");
             return;
         }
         if (num <= 19) {
-            switch (num) {
-                case 1:
-                    System.out.println("One");
-                    break;
-                case 2:
-                    System.out.println("Two");
-                    break;
-                case 3:
-                    System.out.println("Three");
-                    break;
-                case 4:
-                    System.out.println("Four");
-                    break;
-                case 5:
-                    System.out.println("Five");
-                    break;
-                case 6:
-                    System.out.println("Six");
-                    break;
-                case 7:
-                    System.out.println("Seven");
-                    break;
-                case 8:
-                    System.out.println("Eight");
-                    break;
-                case 9:
-                    System.out.println("Nine");
-                    break;
-                case 10:
-                    System.out.println("Ten");
-                    break;
-                case 11:
-                    System.out.println("Eleven");
-                    break;
-                case 12:
-                    System.out.println("Twelve");
-                    break;
-                case 13:
-                    System.out.println("Thirteen");
-                    break;
-                case 14:
-                    System.out.println("Fourteen");
-                    break;
-                case 15:
-                    System.out.println("Fifteen");
-                    break;
-                case 16:
-                    System.out.println("Sixteen");
-                    break;
-                case 17:
-                    System.out.println("Seventeen");
-                    break;
-                case 18:
-                    System.out.println("Eighteen");
-                    break;
-                case 19:
-                    System.out.println("Nineteen");
-                    break;
-            }
+            System.out.println(convertUnit(num));
             return;
         }
-        String unit = convertUnit(num % 10);
         if (num <= 99) {
-            System.out.println(convertTens(num) + unit);
+            System.out.println(convertTens(num) + convertUnit(num % 10));
             return;
         }
-        System.out.println(convertUnit(num / 100) + " hundred " + convertTens(num % 100) + unit);
+        if (num % 100 < 20) {
+            System.out.println(convertUnit(num / 100) + " hundred " + convertUnit(num % 100));
+            return;
+        }
+        System.out.println(convertUnit(num / 100) + " hundred " + convertTens(num % 100) + convertUnit(num % 10));
     }
 }
