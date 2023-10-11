@@ -13,8 +13,9 @@ public class PrimeNumber {
         }
         byte count = 1;
         int num = 2;
+        boolean isPrime;
         while (count <= n) {
-            boolean isPrime = true;
+            isPrime = true;
             for (int i = 2; i <= Math.sqrt(num); i++) {
                 if (num % i == 0) {
                     isPrime = false;
