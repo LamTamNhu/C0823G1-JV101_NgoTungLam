@@ -1,4 +1,4 @@
-package ss5.prac;
+package ss5.prac.circle;
 
 public class Circle {
     private double radius = 1;
@@ -20,9 +20,5 @@ public class Circle {
         return radius * Math.pow(Math.PI, 2);
     }
 
-    public static void main(String[] args) {
-        Circle circle = new Circle();
-        System.out.println(circle.getRadius());
-        System.out.println(circle.getArea());
-    }
+
 }
