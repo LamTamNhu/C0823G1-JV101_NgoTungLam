@@ -1,8 +1,8 @@
 package ss6.circle;
 
 public class Circle {
-    double radius;
-    String color;
+    private double radius;
+    private String color;
 
     Circle() {
     }
