@@ -1,9 +1,9 @@
 package ss4.prac.fan;
 
 public class Fan {
-    final byte SLOW = 1;
-    final byte MEDIUM = 2;
-    final byte FAST = 3;
+    private final byte SLOW = 1;
+    private final byte MEDIUM = 2;
+    private final byte FAST = 3;
     private int speed = SLOW;
     private boolean on = false;
     private double radius = 5;
@@ -54,7 +54,7 @@ public class Fan {
         if (on) {
             return ("Speed: " + speed + "\nColor: " + color + "\nRadius: " + radius + "\nFan is on");
         } else {
-            return ("Speed: " + speed + "\nColor: " + color + "\nRadius: " + radius + "\nFan is off");
+            return ("Color: " + color + "\nRadius: " + radius + "\nFan is off");
         }
     }
 }

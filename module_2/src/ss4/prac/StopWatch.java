@@ -38,22 +38,22 @@ public class StopWatch {
         StopWatch stopWatch = new StopWatch();
 
         int min;
-        int min_index;
+        int minIndex;
         int temp;
 
         stopWatch.start();
         for (int i = 0; i < random.length; i++) {
-            min_index = i;
+            minIndex = i;
             min = random[i];
             for (int j = i + 1; j < random.length; j++) {
                 if (min > random[j]) {
                     min = random[j];
-                    min_index = j;
+                    minIndex = j;
                 }
             }
             temp = random[i];
-            random[i] = random[min_index];
-            random[min_index] = temp;
+            random[i] = random[minIndex];
+            random[minIndex] = temp;
         }
         stopWatch.end();
 //        System.out.println(Arrays.toString(random));

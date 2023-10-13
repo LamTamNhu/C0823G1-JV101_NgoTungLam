@@ -3,9 +3,9 @@ package ss4.prac.quadraticEquation;
 import java.util.Scanner;
 
 public class QuadraticEquation {
-    double a;
-    double b;
-    double c;
+    private double a;
+    private double b;
+    private double c;
 
     QuadraticEquation(double a, double b, double c) {
         this.a = a;
@@ -23,6 +23,18 @@ public class QuadraticEquation {
 
     public double getC() {
         return c;
+    }
+
+    public void setA(double a) {
+        this.a = a;
+    }
+
+    public void setB(double b) {
+        this.b = b;
+    }
+
+    public void setC(double c) {
+        this.c = c;
     }
 
     public double getDiscriminant() {
