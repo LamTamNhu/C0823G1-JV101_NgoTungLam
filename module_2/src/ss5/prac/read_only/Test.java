@@ -1,4 +1,4 @@
-package ss5.prac.readOnly;
+package ss5.prac.read_only;
 
 public class Test {
     public static void main(String[] args) {
