@@ -1,15 +1,15 @@
-package ss6.pointMovablepoint;
+package ss6.point2D_point3D;
 
-public class Point {
+public class Point2D {
     private float x = 0.0f;
     private float y = 0.0f;
 
-    public Point(float x, float y) {
-        this.x = x;
-        this.y = y;
+    public Point2D() {
     }
 
-    public Point() {
+    public Point2D(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
 
     public float getX() {
@@ -28,20 +28,17 @@ public class Point {
         this.y = y;
     }
 
-    public float[] getXY() {
-        return new float[]{x, y};
-    }
-
     public void setXY(float x, float y) {
         this.x = x;
         this.y = y;
     }
 
-    @Override
+    public float[] getXY() {
+        return new float[]{x, y};
+    }
+@Override
     public String toString() {
-        return "Point{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return "x: " + x
+                +"\ny: " + y;
     }
 }

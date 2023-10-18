@@ -1,7 +1,7 @@
 package ss6.circle;
 
 public class Cylinder extends Circle {
-    double height;
+    private double height;
 
     public Cylinder(double radius, double height, String color) {
         super(radius, color);
@@ -17,7 +17,7 @@ public class Cylinder extends Circle {
     }
 
     public double getVolume() {
-        return Math.PI * Math.pow(getRadius(), 2) * height;
+        return getArea() * height;
     }
 
     @Override

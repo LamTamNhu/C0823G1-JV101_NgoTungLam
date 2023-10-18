@@ -1,4 +1,4 @@
-package ss6.pointMovablepoint;
+package ss6.point_movable_point;
 
 public class PointControl {
     public static void main(String[] args) {

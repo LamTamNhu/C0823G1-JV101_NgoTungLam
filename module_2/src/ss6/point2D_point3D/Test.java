@@ -1,4 +1,4 @@
-package ss6.point2Dpoint3D;
+package ss6.point2D_point3D;
 
 public class Test {
     public static void main(String[] args) {

@@ -3,11 +3,11 @@ package ss6.triangle;
 abstract class Shape {
     String color;
 
-    Shape() {
+    public Shape() {
 
     }
 
-    Shape(String color) {
+    public Shape(String color) {
         this.color = color;
     }
 

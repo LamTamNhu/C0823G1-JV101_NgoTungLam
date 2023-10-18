@@ -1,4 +1,4 @@
-package ss6.pointMovablepoint;
+package ss6.point_movable_point;
 
 public class MovablePoint extends Point {
     private float xSpeed = 0.0f;
