@@ -1,4 +1,4 @@
-package ss7.prac.resizableAndColorable;
+package ss7.prac.resizable_and_colorable;
 
 public class Circle extends Shape implements Resizeable {
     private double radius = 1.0;

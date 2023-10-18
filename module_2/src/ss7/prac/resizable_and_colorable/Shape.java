@@ -1,4 +1,4 @@
-package ss7.prac.resizableAndColorable;
+package ss7.prac.resizable_and_colorable;
 
 public class Shape {
     private String color = "green";

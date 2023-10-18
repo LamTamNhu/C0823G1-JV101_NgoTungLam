@@ -1,11 +1,11 @@
-package ss7.exer.EdibleAnimal;
+package ss7.exer.edible_animal;
 
-import ss7.exer.EdibleAnimal.animal.Animal;
-import ss7.exer.EdibleAnimal.animal.Chicken;
-import ss7.exer.EdibleAnimal.animal.Tiger;
-import ss7.exer.EdibleAnimal.fruit.Apple;
-import ss7.exer.EdibleAnimal.fruit.Fruit;
-import ss7.exer.EdibleAnimal.fruit.Orange;
+import ss7.exer.edible_animal.animal.Animal;
+import ss7.exer.edible_animal.animal.Chicken;
+import ss7.exer.edible_animal.animal.Tiger;
+import ss7.exer.edible_animal.fruit.Apple;
+import ss7.exer.edible_animal.fruit.Fruit;
+import ss7.exer.edible_animal.fruit.Orange;
 
 public class EdibleAnimalTest {
     public static void main(String[] args) {

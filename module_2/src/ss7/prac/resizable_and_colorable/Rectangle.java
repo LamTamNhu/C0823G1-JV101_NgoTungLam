@@ -1,4 +1,4 @@
-package ss7.prac.resizableAndColorable;
+package ss7.prac.resizable_and_colorable;
 
 public class Rectangle extends Shape implements Resizeable, Colorable {
     private double width = 1.0;
