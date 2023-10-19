@@ -5,14 +5,14 @@ public class Square extends Rectangle implements Colorable {
         setWidth(getLength());
     }
 
-    public Square(double length) {
-        setLength(length);
-        setWidth(length);
+    public Square(double side) {
+        setLength(side);
+        setWidth(side);
     }
 
-    public Square(double length, String color, boolean filled) {
-        setLength(length);
-        setWidth(length);
+    public Square(double side, String color, boolean filled) {
+        setLength(side);
+        setWidth(side);
         setColor(color);
         setFilled(filled);
     }
