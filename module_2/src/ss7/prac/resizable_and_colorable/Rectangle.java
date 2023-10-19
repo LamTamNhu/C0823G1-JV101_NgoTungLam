@@ -1,6 +1,6 @@
 package ss7.prac.resizable_and_colorable;
 
-public class Rectangle extends Shape implements Resizeable, Colorable {
+public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -56,10 +56,5 @@ public class Rectangle extends Shape implements Resizeable, Colorable {
                 + getLength()
                 + ", which is a subclass of "
                 + super.toString();
-    }
-
-    @Override
-    public void howToColor() {
-        System.out.println("Color all four sides.");
     }
 }

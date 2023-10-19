@@ -7,16 +7,16 @@ public class ColorableTest {
             if (i % 2 == 0) {
                 shapes[i] = new Circle();
             } else {
-                shapes[i] = new Rectangle();
+                shapes[i] = new Square();
             }
         }
 
         for (Shape shape : shapes) {
-            if (shape instanceof Rectangle) {
-                Rectangle tempRect = (Rectangle) shape;
-                tempRect.howToColor();
+            if (shape instanceof Square) {
+                Square tempSquare = (Square) shape;
+                tempSquare.howToColor();
             } else {
-                System.out.println("Not a rectangle");
+                System.out.println("Not a square");
             }
             System.out.println(shape.getArea());
             System.out.println("-------------");
