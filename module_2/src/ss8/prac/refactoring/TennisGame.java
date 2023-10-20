@@ -5,19 +5,26 @@ public class TennisGame {
     private static final int FIFTEEN = 1;
     private static final int THIRTY = 2;
     private static final int FORTY = 3;
+    private static final String LOVE_STRING = "Love";
+    private static final String FIFTEEN_STRING = "Fifteen";
+    private static final String THIRTY_STRING = "Thirty";
+    private static final String FORTY_STRING = "Forty";
+    private static final String ALL_STRING = "All";
+    private static final String DEUCE_STRING = "Deuce";
+    private static final String SEPARATOR = "-";
 
     private static String getEqualsScore(int playerScore) {
         switch (playerScore) {
             case LOVE:
-                return "Love-All";
+                return LOVE_STRING + SEPARATOR + ALL_STRING;
             case FIFTEEN:
-                return "Fifteen-All";
+                return FIFTEEN_STRING + SEPARATOR + ALL_STRING;
             case THIRTY:
-                return "Thirty-All";
+                return THIRTY_STRING + SEPARATOR + ALL_STRING;
             case FORTY:
-                return "Forty-All";
+                return FORTY_STRING + SEPARATOR + ALL_STRING;
             default:
-                return "Deuce";
+                return DEUCE_STRING;
         }
     }
 
@@ -40,21 +47,21 @@ public class TennisGame {
         for (int i = 1; i < 3; i++) {
             if (i == 1) tempScore = player1Score;
             else {
-                result += "-";
+                result += SEPARATOR;
                 tempScore = player2Score;
             }
             switch (tempScore) {
                 case LOVE:
-                    result += "Love";
+                    result += LOVE_STRING;
                     break;
                 case FIFTEEN:
-                    result += "Fifteen";
+                    result += FIFTEEN_STRING;
                     break;
                 case THIRTY:
-                    result += "Thirty";
+                    result += THIRTY_STRING;
                     break;
                 case FORTY:
-                    result += "Forty";
+                    result += FORTY_STRING;
                     break;
             }
         }
