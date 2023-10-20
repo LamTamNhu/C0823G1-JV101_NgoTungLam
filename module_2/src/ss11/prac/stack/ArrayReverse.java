@@ -4,6 +4,7 @@ import java.util.Stack;
 
 public class ArrayReverse {
     public static void main(String[] args) {
+        System.out.println("Đảo ngược phần tử trong mảng số nguyên sử dụng Stack");
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < 10; i++) {
             stack.push((int) Math.floor(Math.random() * 20));
@@ -17,17 +18,18 @@ public class ArrayReverse {
         }
         System.out.println(reverseStack);
 
-        String string = "The coffin meme game like why Lia is so weird ICANT.";
+        String string = "The coffin meme game like why Lia is so weird ICANT";
+        System.out.println("Đảo ngược chuỗi sử dụng Stack");
+        System.out.println(string);
         Stack<String> reverseString = new Stack<>();
         String[] stringArray = string.split(" ");
         for (String ele : stringArray) {
             reverseString.push(ele);
         }
-        string = "";
+
         while (!reverseString.empty()) {
-            string += reverseString.peek() + " ";
+            System.out.print(reverseString.peek() + " ");
             reverseString.pop();
         }
-        System.out.println(string);
     }
 }
