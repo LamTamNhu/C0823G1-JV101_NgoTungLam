@@ -10,10 +10,12 @@ public class CountingWords {
         String[] wordArray = string.split(" ");
         System.out.println(Arrays.toString(wordArray));
         wordCounterTree.put(wordArray[0].toLowerCase(), 1);
+        String word;
+        int newVal;
         for (int i = 1; i < wordArray.length; i++) {
-            String word = wordArray[i].toLowerCase();
+            word = wordArray[i].toLowerCase();
             if (wordCounterTree.containsKey(word)) {
-                int newVal = wordCounterTree.get(word);
+                newVal = wordCounterTree.get(word);
                 wordCounterTree.put(word, newVal + 1);
             } else {
                 wordCounterTree.put(word, 1);
