@@ -9,7 +9,12 @@ public class ProductManagerArrayList {
         products.add(new Product(2, "Sekiro: Shadows Die Twice", 100));
         addProduct(3, "Elden Ring", 200);
         addProduct(1, "Armored Core", 59.99);
+        displayProduct();
         findProduct("shadow");
+        editProduct(2);
+        removeProduct(3);
+        sortProduct();
+        displayProduct();
     }
 
     public static void addProduct(int id, String name, double price) {
@@ -18,8 +23,10 @@ public class ProductManagerArrayList {
 
     public static void editProduct(int id) {
         Scanner scanner = new Scanner(System.in);
-        for (Product e : products) {
-            if (e.getId() == id) {
+        for (Product p : products) {
+            if (p.getId() == id) {
+                System.out.println("Found product with id " + id);
+                System.out.println(p);
                 System.out.println("Enter product's new id");
                 id = Integer.parseInt(scanner.nextLine());
                 System.out.println("Enter product's new name");
@@ -27,9 +34,9 @@ public class ProductManagerArrayList {
                 System.out.println("Enter product's new price");
                 double price = Double.parseDouble(scanner.nextLine());
 
-                e.setId(id);
-                e.setName(name);
-                e.setPrice(price);
+                p.setId(id);
+                p.setName(name);
+                p.setPrice(price);
                 return;
             }
         }
