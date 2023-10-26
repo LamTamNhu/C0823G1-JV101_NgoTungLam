@@ -1,4 +1,4 @@
-package ss15.prac;
+package ss15.prac.triangle_exception;
 
 public class IllegalTriangleException extends Exception {
     private String userMessage;

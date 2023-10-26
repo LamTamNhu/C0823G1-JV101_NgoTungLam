@@ -1,8 +1,8 @@
-package ss15.prac;
+package ss15.prac.triangle_exception;
 
 import java.util.Scanner;
 
-public class TestTriangleException {
+public class TriangleExceptionTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first side");
