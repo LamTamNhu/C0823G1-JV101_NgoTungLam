@@ -12,4 +12,24 @@ public class ProductController {
     public List<Product> getAll() {
         return productService.getAll();
     }
+
+    public Product findProductByName(String productName) {
+        return productService.findProductByName(productName);
+    }
+
+    public Boolean addProduct(Product product) {
+        return productService.addProduct(product);
+    }
+
+    public boolean editProduct(Integer id, Product product) {
+        return productService.editProduct(id,product);
+    }
+
+    public boolean removeProduct(Integer id) {
+        return productService.removeProduct(id);
+    }
+
+    public boolean checkIdInput(Integer id) {
+        return productService.checkIdInput(id);
+    }
 }

@@ -14,7 +14,12 @@ public class Product {
         this.price = price;
     }
 
-    public int getId() {
+    public Product(String name, Double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public Integer getId() {
         return id;
     }
 
@@ -22,7 +27,7 @@ public class Product {
         return name;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
