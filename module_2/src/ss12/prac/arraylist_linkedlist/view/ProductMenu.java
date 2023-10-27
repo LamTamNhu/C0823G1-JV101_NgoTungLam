@@ -27,7 +27,7 @@ public class ProductMenu {
             int input;
             try {
                 input = Integer.parseInt(scanner.nextLine());
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 System.out.println("Invalid input, try again!");
                 enterToContinue();
                 continue;
