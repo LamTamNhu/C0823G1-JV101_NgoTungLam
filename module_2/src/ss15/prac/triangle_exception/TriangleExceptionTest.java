@@ -22,7 +22,7 @@ public class TriangleExceptionTest {
                 throw new IllegalTriangleException("Three sides sums are invalid");
             }
         } catch (IllegalTriangleException e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
     }
 }
