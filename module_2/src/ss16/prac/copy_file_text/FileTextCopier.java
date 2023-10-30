@@ -44,7 +44,8 @@ public class FileTextCopier {
             int charCount = 0;
             while ((line = reader.readLine()) != null) {
                 charCount += line.length();
-                writer.write(line + "\n");
+                writer.write(line);
+                writer.newLine();
             }
             System.out.println("Write to file succeed!");
             System.out.println("File have " + charCount + " characters");
