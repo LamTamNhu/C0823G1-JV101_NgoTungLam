@@ -2,28 +2,12 @@ package ss17.prac.product_manager_binary_io.repository.impl;
 
 import ss17.prac.product_manager_binary_io.model.Product;
 import ss17.prac.product_manager_binary_io.repository.IProductRepository;
+import ss17.prac.product_manager_binary_io.util.BinaryObjectReader;
 
-import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ProductRepository implements IProductRepository {
-    private static final List<Product> products = new ArrayList<>();
-
-//    static {
-//        File data = new File("src/ss17/prac/product_manager_binary_io/data/ProductList.dat");
-//        if (data.exists() && data.length() > 0) {
-//            try (FileInputStream fileInputStream = new FileInputStream(data);
-//                 ObjectInputStream input = new ObjectInputStream(fileInputStream)) {
-//                Product product;
-//                while ((product = (Product) input.readObject()) != null){
-//                    products.add(product);
-//                }
-//            } catch (IOException | ClassNotFoundException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
+    private static final List<Product> products = BinaryObjectReader.readFile();
 
     @Override
     public List<Product> getAll() {
@@ -44,12 +28,7 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public Boolean addEntry(Product product) {
-        if (findById(product.getId()) == null) {
-            products.add(product);
-            return true;
-        } else {
-            return false;
-        }
+        return products.add(product);
     }
 
     @Override

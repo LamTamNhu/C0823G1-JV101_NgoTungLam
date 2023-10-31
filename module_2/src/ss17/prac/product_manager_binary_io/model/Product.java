@@ -59,5 +59,8 @@ public class Product implements Serializable {
         return description;
     }
 
-
+    @Override
+    public String toString() {
+        return "Id= " + id + "| Name= " + name + "| Price= " + price + "| Brand= " + brand + "| Desc= " + description;
+    }
 }

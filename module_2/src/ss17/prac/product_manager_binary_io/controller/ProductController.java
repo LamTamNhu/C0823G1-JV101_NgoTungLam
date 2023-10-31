@@ -3,6 +3,7 @@ package ss17.prac.product_manager_binary_io.controller;
 import ss17.prac.product_manager_binary_io.model.Product;
 import ss17.prac.product_manager_binary_io.service.IProductService;
 import ss17.prac.product_manager_binary_io.service.ProductService;
+import ss17.prac.product_manager_binary_io.util.BinaryObjectWriter;
 
 import java.util.List;
 
@@ -18,11 +19,14 @@ public class ProductController {
     }
 
     public Boolean addProduct(Product product) {
-        return productService.addProduct(product);
+        boolean result;
+        result = productService.addProduct(product);
+        BinaryObjectWriter.writeToFile(getAll());
+        return result;
     }
 
     public boolean editProduct(Integer id, Product product) {
-        return productService.editProduct(id,product);
+        return productService.editProduct(id, product);
     }
 
     public boolean removeProduct(Integer id) {

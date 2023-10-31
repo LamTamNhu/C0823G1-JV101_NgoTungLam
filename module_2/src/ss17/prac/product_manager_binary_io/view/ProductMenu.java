@@ -109,11 +109,10 @@ public class ProductMenu {
     }
 
     private static void displayProducts() {
-        List<Product> products;
+        List<Product> products = productController.getAll();
         System.out.println("-----Product List-----");
-        products = productController.getAll();
-        for (Product productElement : products) {
-            System.out.println(productElement);
+        for (Product product : products) {
+            System.out.println(product);
         }
         enterToContinue();
     }
