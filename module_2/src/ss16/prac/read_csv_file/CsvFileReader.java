@@ -14,8 +14,9 @@ public class CsvFileReader {
             e.printStackTrace();
             return;
         }
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(file));
             String line;
             String[] parsedLine;
             while ((line = reader.readLine()) != null) {
@@ -24,6 +25,12 @@ public class CsvFileReader {
             }
         } catch (IOException e) {
             e.printStackTrace();
+        }finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

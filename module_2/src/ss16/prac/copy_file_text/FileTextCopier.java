@@ -38,8 +38,11 @@ public class FileTextCopier {
             return;
         }
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(sourceFile));
-             BufferedWriter writer = new BufferedWriter(new FileWriter(targetFile))) {
+        BufferedReader reader = null;
+        BufferedWriter writer = null;
+        try {
+            reader = new BufferedReader(new FileReader(sourceFile));
+            writer = new BufferedWriter(new FileWriter(targetFile));
             String line;
             int charCount = 0;
             while ((line = reader.readLine()) != null) {
@@ -50,8 +53,14 @@ public class FileTextCopier {
             System.out.println("Write to file succeed!");
             System.out.println("File have " + charCount + " characters");
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+        } finally {
+            try {
+                reader.close();
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-
     }
 }
