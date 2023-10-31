@@ -1,4 +1,4 @@
-package ss19.phone_number_validation;
+package ss19.prac.phone_number_validation;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

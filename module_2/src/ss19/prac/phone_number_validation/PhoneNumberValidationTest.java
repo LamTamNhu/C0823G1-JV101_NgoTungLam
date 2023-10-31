@@ -1,4 +1,4 @@
-package ss19.phone_number_validation;
+package ss19.prac.phone_number_validation;
 
 public class PhoneNumberValidationTest {
     public static final String[] validNumber = new String[]{"(84)-(0978489648)"};
