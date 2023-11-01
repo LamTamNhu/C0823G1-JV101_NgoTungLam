@@ -19,19 +19,16 @@ public class ProductController {
     }
 
     public Boolean addProduct(Product product) {
-        boolean result;
-        result = productService.addProduct(product);
-        BinaryObjectWriter.writeToFile(getAll());
-        return result;
+        return productService.addProduct(product);
     }
 
-    public boolean editProduct(Integer id, Product product) {
-        return productService.editProduct(id, product);
-    }
-
-    public boolean removeProduct(Integer id) {
-        return productService.removeProduct(id);
-    }
+//    public boolean editProduct(Integer id, Product product) {
+//        return productService.editProduct(id, product);
+//    }
+//
+//    public boolean removeProduct(Integer id) {
+//        return productService.removeProduct(id);
+//    }
 
     public boolean checkIdInput(Integer id) {
         return productService.checkIdInput(id);

@@ -24,15 +24,15 @@ public class ProductService implements IProductService {
         return productRepository.addEntry(product);
     }
 
-    @Override
-    public boolean removeProduct(Integer id) {
-        return productRepository.removeByID(id);
-    }
-
-    @Override
-    public boolean editProduct(Integer id, Product product) {
-        return productRepository.editEntry(id,product);
-    }
+//    @Override
+//    public boolean removeProduct(Integer id) {
+//        return productRepository.removeByID(id);
+//    }
+//
+//    @Override
+//    public boolean editProduct(Integer id, Product product) {
+//        return productRepository.editEntry(id,product);
+//    }
 
     @Override
     public boolean checkIdInput(Integer id) {

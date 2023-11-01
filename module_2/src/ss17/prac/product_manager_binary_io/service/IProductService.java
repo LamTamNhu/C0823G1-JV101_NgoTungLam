@@ -11,9 +11,9 @@ public interface IProductService {
 
     Boolean addProduct(Product product);
 
-    boolean removeProduct(Integer id);
-
-    boolean editProduct(Integer id, Product product);
+//    boolean removeProduct(Integer id);
+//
+//    boolean editProduct(Integer id, Product product);
 
     boolean checkIdInput(Integer id);
 }

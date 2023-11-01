@@ -11,9 +11,9 @@ public interface IProductRepository {
 
     Boolean addEntry(Product product);
 
-    boolean removeByID(Integer id);
-
-    boolean editEntry(Integer id, Product product);
+//    boolean removeByID(Integer id);
+//
+//    boolean editEntry(Integer id, Product product);
 
     Product findById(Integer id);
 }
