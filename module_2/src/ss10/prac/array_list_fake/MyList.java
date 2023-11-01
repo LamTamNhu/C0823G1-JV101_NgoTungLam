@@ -103,7 +103,7 @@ public class MyList<E> {
         String result = "";
         for (Object e : elements) {
             if (e != null) {
-                result += e.toString() + " ";
+                result += e + " ";
             }
         }
         return result;

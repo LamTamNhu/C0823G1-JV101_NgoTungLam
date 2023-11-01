@@ -7,6 +7,7 @@ import java.util.*;
 
 public class ProductMenu {
     private static final ProductController productController = new ProductController();
+    private static final String invalidInput = "Invalid input, try again!";
     private static final Scanner scanner = new Scanner(System.in);
     private static Integer id;
     private static Product product;
@@ -28,7 +29,7 @@ public class ProductMenu {
             try {
                 input = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("Invalid input, try again!");
+                System.out.println(invalidInput);
                 enterToContinue();
                 continue;
             }
@@ -51,6 +52,8 @@ public class ProductMenu {
                     break;
                 case 0:
                     System.exit(0);
+                default:
+                    System.out.println(invalidInput);
             }
         } while (true);
     }
@@ -131,7 +134,7 @@ public class ProductMenu {
             try {
                 price = Double.parseDouble(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("Invalid price input, try again!");
+                System.out.println(invalidInput);
                 continue;
             }
             break;
@@ -144,7 +147,7 @@ public class ProductMenu {
         try {
             return Integer.valueOf(scanner.nextLine());
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input, try again!");
+            System.out.println(invalidInput);
             enterToContinue();
             return inputId();
         }
