@@ -3,5 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/furama_resort" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/furama_resort/furama_resort" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/module_4/ss1/currency" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/server_time" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/untitled" vcs="Git" />
   </component>
 </project>
