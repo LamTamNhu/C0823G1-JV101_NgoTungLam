@@ -1,6 +1,8 @@
 package com.example.dictionary.repository;
+
 import java.util.HashMap;
 
+@org.springframework.stereotype.Repository
 public class Repository implements IRepository {
     private static final HashMap<String, String> dictionary = new HashMap<>();
 
@@ -13,6 +15,10 @@ public class Repository implements IRepository {
 
     @Override
     public String translate(String word) {
-        return dictionary.get(word);
+        if (dictionary.get(word) == null) {
+            return "Không tìm thấy";
+        } else {
+            return dictionary.get(word);
+        }
     }
 }
