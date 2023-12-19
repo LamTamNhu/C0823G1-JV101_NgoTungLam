@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, td, th {
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table cellspacing="5px">
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="amount"></td>
+            <td>
+                <select id="from" name="from">
+                    <option value="VND" name="vnd">VND</option>
+                    <option value="USD" name="usd">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="to" name="to">
+                    <option value="USD" name="usd">USD</option>
+                    <option value="VND" name="vnd">VND</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" onclick="cconvert()">Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td><p id="result">DAMN</p></td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    function cconvert() {
+        //alert("Sup");
+        //console.log("working");
+        let amount = parseInt(document.getElementById("amount").value);
+        let fromA = document.getElementById("from").value;
+        let toB = document.getElementById("to").value;
+        let result = amount;
+        if (fromA == "VND" && toB == "USD") {
+            result = amount / 24000;
+        }
+        if (fromA == "USD" && toB == "VND") {
+            result = amount * 24000;
+        }
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Employee {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setAge(age) {
+            console.log(this);
+            this.age = age;
+        }
+
+        getAge() {
+            return this.age;
+        }
+        testFunc(){
+            console.log(this);
+        }
+    }
+
+    dah = new Employee("Hoàng Minh Khánh", 22);
+    addEventListener('keydown',dah.testFunc.bind(dah));
+</script>
+</body>
+</html>

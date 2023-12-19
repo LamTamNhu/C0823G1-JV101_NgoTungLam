@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="407eeca0-b9b1-4904-a516-5ff874f5f7bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module_3_test/test/src/main/java/control/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module_3_test/test/src/main/java/model/ChiTieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module_3_test/test/src/main/java/repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module_3_test/test/src/main/java/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module_3_test/test/src/main/java/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module_3_test/test/src/main/java/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module_3_test/test/src/main/webapp/add_new.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module_3_test/test/src/main/webapp/display_all.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/loop_8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/multiply_table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/11/bai_tap/prime_numbers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/array_methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/13/bai_tap/dictionary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/admin_app.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/check_prime_number.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/feet_meter_conversion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_27.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/15/bai_tap/function_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/16/bai_tap/driving/car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/16/bai_tap/driving/cong_an.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/16/bai_tap/driving/driving.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/16/bai_tap/mobile_phone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/16/bai_tap/rectangle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/16/bai_tap/temperature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/17/bai_tap/adam_eva.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/17/bai_tap/move_character/ToT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/17/bai_tap/move_character/move_character.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/17/bai_tap/move_character/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/17/bai_tap/switch_lamp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/3/average.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/3/biggest.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/3/nlargest.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/3/ranking.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/4/.idea/4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/4/CV.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/4/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/4/profile_pic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/5/bai_tap/board.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/5/bai_tap/register_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/5/bai_tap/schedule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/5/bai_tap/simple_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/5/bai_tap/survey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/7/bai_tap/calc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/7/bai_tap/currency_convert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/7/bai_tap/variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/bmi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/calculator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_210.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_211.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_212.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_27.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/condition_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/9/bai_tap/months.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/bouncing_ball.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/caro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_1_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_1_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_2_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_2_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_2_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_3_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_3_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_3_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_3_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_4_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_4_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_4_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_5_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_5_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_5_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/case_study/case_study_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/demo/products-management.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss16/prac/read_csv_file/FileTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_2/src/ss16/prac/read_csv_file/FileTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/exer/calculator/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/exer/calculator/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/exer/calculator/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/exer/cylinder/Cylinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/exer/cylinder/CylinderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/exer/cylinder/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/exer/fizz_buzz/FizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/exer/fizz_buzz/FizzBuzzTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/exer/fizz_buzz/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/prac/refactoring/TennisGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/ss8/prac/refactoring/TennisGameTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ZhpMFYJUXfLZuIrQngomoGHLNy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Codegym/module_4/module_4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codegym\module_4\customer_management\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.82" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : customer_management-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="a5b7ea96-0b55-4476-8e85-5cb8d3e700c3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50011" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : customer_management-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="407eeca0-b9b1-4904-a516-5ff874f5f7bf" name="Changes" comment="" />
+      <created>1702884116506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702884116506</updated>
+      <workItem from="1702884122580" duration="48000" />
+      <workItem from="1702884650156" duration="512000" />
+      <workItem from="1702885372229" duration="4816000" />
+      <workItem from="1702893604365" duration="915000" />
+      <workItem from="1702948900368" duration="150000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

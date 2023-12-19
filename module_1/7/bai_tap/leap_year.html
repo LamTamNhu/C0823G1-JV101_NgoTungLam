@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input typeof="number" id="year">
+<br><br>
+<button onclick="check()">Check</button>
+<p id="result"></p>
+
+a<input typeof="number" id="a">
+b<input typeof="number" id="b">
+<button onclick="checkSum()">Check</button>
+
+
+<script>
+    function checkSum() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let result = (a + b < 4) ? "Below" : "Over";
+        alert(result);
+    }
+
+    let username = prompt("Wh OMEGA 's there?", "");
+    if (username === "admin") {
+        let password = prompt("enter password", "");
+        if (password === "TheMaster") {
+            alert("welcome");
+        } else {
+            if (password === "null") {
+                alert("canceled");
+            } else {
+                alert("wrong password");
+            }
+        }
+    } else {
+        if (username === "null") {
+            alert("canceled");
+        } else {
+            alert("i don't know you");
+        }
+    }
+
+    function check() {
+        let year = +document.getElementById("year").value;
+        if (year % 4 === 0) {
+            if ((year % 100 === 0) && (year % 400 === 0)) {
+                alert(year + " is a leap year");
+                return;
+            }
+        }
+        alert(year + " is NOT a leap year");
+    }
+</script>
+</body>
+</html>

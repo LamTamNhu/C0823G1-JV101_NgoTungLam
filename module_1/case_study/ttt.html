@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+    function saveThePrisoner(a, k, queries) {
+        // Write your code here
+        let steps = k % a.length;
+        let result = [];
+        for (let i = 0; i < queries.length; i++) {
+            if (queries[i] - steps >= 0) {
+                result.push(a[i - steps]);
+            } else {
+                result.push(a[a.length - (steps - i)]);
+            }
+        }
+        return result;
+    }
+
+    console.log(saveThePrisoner([3, 4, 5], 2, [1, 2]));
+</script>
+
+</body>
+</html>

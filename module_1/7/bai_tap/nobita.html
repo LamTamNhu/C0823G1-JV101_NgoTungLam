@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+
+<img onlic id="nobita" src="https://james.codegym.vn/pluginfile.php/64922/mod_assign/intro/1.png">
+
+<script>
+    function docReady() {
+        document.addEventListener("keydown", moveNob);
+    }
+
+    function moveNob(evt) {
+        let keyPress = evt.key;
+        console.log(keyPress);
+    }
+</script>
+</body>
+</html>

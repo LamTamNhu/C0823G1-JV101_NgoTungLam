@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findOddNum(a) {
+        for (let i = 0; i < a.length; i++) {
+            let numChecker = a[i].toString();
+            console.log(numChecker);
+            if (parseInt(numChecker[0]) % 2 !== 0) {
+                alert('Số nguyên đầu tiên có chữ số đầu tiên là chữ số lẻ: ' + numChecker);
+                return;
+            }
+        }
+        alert('Không tìm thấy số phù hợp');
+    }
+
+    findOddNum([42, 26, 35, 9]);
+</script>
+</body>
+</html>

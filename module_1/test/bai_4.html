@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="deleteFlight()" type="button">Xóa chuyến bay</button>
+<br><br>
+<div id="display"></div>
+<script>
+    class Flight {
+        constructor(code, name, date, time, department, arrival) {
+            this.code = code;
+            this.name = name;
+            this.date = date;
+            this.time = time;
+            this.department = department;
+            this.arrival = arrival;
+        }
+    }
+
+    function display() {
+        let table = `<table border="1" style="border-collapse: collapse;table-layout: fixed" cellpadding="10px">
+    <tr>
+        <th>Code</th>
+        <th>Flight Name</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Department</th>
+        <th>Arrival</th>
+    </tr>`
+        for (let i = 0; i < flightList.length; i++) {
+            table += `<tr>`;
+            table += `<td>${flightList[i].code}</td>`;
+            table += `<td>${flightList[i].name}</td>`;
+            table += `<td>${flightList[i].date}</td>`;
+            table += `<td>${flightList[i].time}</td>`;
+            table += `<td>${flightList[i].department}</td>`;
+            table += `<td>${flightList[i].arrival}</td>`;
+            table += `</tr>`;
+        }
+        table += `</table>`
+        document.getElementById('display').innerHTML = table;
+    }
+
+    function deleteFlight() {
+        let id = prompt('Nhập code chuyến bay cần xóa');
+        for (let i = 0; i < flightList.length; i++) {
+            if (flightList[i].code === id) {
+                flightList.splice(i, 1);
+                display();
+                return;
+            }
+        }
+        alert('Không tìm thấy');
+    }
+
+
+    let flightList = [];
+    let flight1 = new Flight('01', 'VietJet', '22/06/2023', '16:12', 'Ha Noi', "Tokyo");
+    let flight2 = new Flight('02', 'RyanAir', '22/06/2023', '10:00', 'London', "Ha Noi");
+    flightList.push(flight1);
+    flightList.push(flight2);
+
+    display();
+
+</script>
+</body>
+</html>

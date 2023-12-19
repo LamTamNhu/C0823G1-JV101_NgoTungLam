@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = 0;
+    do {
+        n = +prompt('Nhập n');
+        if (n <= 500) break;
+        else alert('n phải <=500');
+    } while (true);
+    let array = [];
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) {
+            array.push(i);
+            sum += i;
+        }
+    }
+    document.write('Các ước số của ' + n + ' là: <br>' + array);
+    document.write('<br>Tổng các ước số của ' + n + ' là: ' + sum);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMaxCase(num) {
+        if (isNaN(num)) return alert("Have to be a number!")
+        if (num >= 0) {
+            if (num <= 999 || num > 9999) {
+                return alert("Number needs to have 4 digits!");
+            }
+            let numString = num.toString();
+            let max = parseInt(numString.slice(1));
+            console.log("max " + max);
+            let numStringCheck;
+            for (let i = 0; i < 4; i++) {
+                numStringCheck = "";
+                for (let j = 0; j < 4; j++) {
+                    if (j === i) {
+                        continue;
+                    }
+                    numStringCheck += numString[j];
+                }
+                if (max < parseInt(numStringCheck)) {
+                    max = parseInt(numStringCheck);
+                }
+            }
+            return max;
+        }
+    }
+
+    let n = +prompt("Enter n");
+    console.log(findMaxCase(n));
+</script>
+</body>
+</html>

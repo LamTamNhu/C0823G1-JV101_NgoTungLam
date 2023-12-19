@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16b6ef88-61af-4645-afc4-212e6be6fd05" name="Changes" comment="*fix feedback ss17.">
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/loop_8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/multiply_table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/11/bai_tap/prime_numbers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/array_methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/13/bai_tap/dictionary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/admin_app.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/check_prime_number.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/feet_meter_conversion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_27.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/15/bai_tap/function_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/16/bai_tap/driving/car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/16/bai_tap/driving/cong_an.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/16/bai_tap/driving/driving.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/16/bai_tap/mobile_phone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/16/bai_tap/rectangle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/16/bai_tap/temperature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/17/bai_tap/adam_eva.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/17/bai_tap/move_character/ToT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/17/bai_tap/move_character/move_character.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/17/bai_tap/move_character/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/17/bai_tap/switch_lamp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/3/average.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/3/biggest.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/3/nlargest.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/3/ranking.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/4/.idea/4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/4/CV.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/4/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/4/profile_pic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/5/bai_tap/board.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/5/bai_tap/register_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/5/bai_tap/schedule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/5/bai_tap/simple_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/5/bai_tap/survey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/7/bai_tap/calc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/7/bai_tap/currency_convert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/7/bai_tap/variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/bmi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/calculator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_210.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_211.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_212.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_27.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/condition_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/9/bai_tap/months.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/bouncing_ball.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/caro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_1_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_1_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_2_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_2_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_2_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_3_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_3_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_3_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_3_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_4_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_4_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_4_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_5_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_5_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_5_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/case_study/case_study_7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module1/demo/products-management.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LamTamNhu&quot;
+  }
+}</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="804a0187-d785-4352-be55-ca41b16914e0" />
+        <option name="url" value="https://github.com/LamTamNhu/C0823G1-NgoTungLam.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/ss1/excer/SystemTime.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2WVdW1f3MTLP4yM2ZmMzsNEc2cH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Codegym/module_2/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "D:/Codegym/module_2/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT",
+      "JAVA",
+      "PLAIN_TEXT"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codegym\module_2\src\ss17\prac\product_manager_binary_io" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codegym\module_2\src\ss17\prac\binary_files_manager\data" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="case_study" />
+      <recent name="ss19.prac" />
+      <recent name="ss5.prac.readOnly" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ss17.prac.product_manager_binary_io.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ProductMenu">
+    <configuration name="ClassNameValidationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss19.prac.class_name_validation.ClassNameValidationTest" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss19.prac.class_name_validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Manager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17.prac.binary_files_manager.Manager" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss17.prac.binary_files_manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhoneNumberValidationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss19.prac.phone_number_validation.PhoneNumberValidationTest" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss19.prac.phone_number_validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17.prac.product_manager_binary_io.view.ProductMenu" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss17.prac.product_manager_binary_io.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinearEquationResolver" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinearEquationResolver" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/LinearEquationResolver.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProductMenu" />
+        <item itemvalue="Application.PhoneNumberValidationTest" />
+        <item itemvalue="Application.ClassNameValidationTest" />
+        <item itemvalue="Java Scratch.LinearEquationResolver" />
+        <item itemvalue="Application.Manager" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16b6ef88-61af-4645-afc4-212e6be6fd05" name="Changes" comment="" />
+      <created>1696821712998</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696821712998</updated>
+      <workItem from="1696821713552" duration="7366000" />
+      <workItem from="1696841241984" duration="4121000" />
+      <workItem from="1696905727066" duration="14416000" />
+      <workItem from="1696930369639" duration="300000" />
+      <workItem from="1696992797183" duration="14943000" />
+      <workItem from="1697078264367" duration="4521000" />
+      <workItem from="1697094255068" duration="4388000" />
+      <workItem from="1697166434332" duration="537000" />
+      <workItem from="1697168167966" duration="8621000" />
+      <workItem from="1697514520901" duration="4560000" />
+      <workItem from="1697524344356" duration="5543000" />
+      <workItem from="1697596456740" duration="19173000" />
+      <workItem from="1697684716807" duration="12466000" />
+      <workItem from="1697702030320" duration="8549000" />
+      <workItem from="1697770595920" duration="9593000" />
+      <workItem from="1697788277950" duration="5691000" />
+      <workItem from="1698028239925" duration="14647000" />
+      <workItem from="1698115559174" duration="14187000" />
+      <workItem from="1698200397739" duration="16114000" />
+      <workItem from="1698287367931" duration="7086000" />
+      <workItem from="1698301909875" duration="8527000" />
+      <workItem from="1698375098122" duration="8444000" />
+      <workItem from="1698396868039" duration="3059000" />
+      <workItem from="1698400325629" duration="782000" />
+      <workItem from="1698633439695" duration="20214000" />
+      <workItem from="1698661049028" duration="103000" />
+      <workItem from="1698718843452" duration="16771000" />
+      <workItem from="1698747165701" duration="425000" />
+      <workItem from="1698811401207" duration="412000" />
+      <workItem from="1698821395468" duration="64000" />
+      <workItem from="1698822800578" duration="1603000" />
+      <workItem from="1698827967245" duration="54000" />
+      <workItem from="1698897756592" duration="27000" />
+      <workItem from="1698897811573" duration="44000" />
+      <workItem from="1698898875269" duration="136000" />
+      <workItem from="1698899017506" duration="283000" />
+      <workItem from="1698910704266" duration="253000" />
+      <workItem from="1698911048653" duration="252000" />
+      <workItem from="1699584960175" duration="87000" />
+    </task>
+    <task id="LOCAL-00001" summary="+ss1 practices">
+      <option name="closed" value="true" />
+      <created>1696834915353</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696834915353</updated>
+    </task>
+    <task id="LOCAL-00002" summary="*fix NumberReader.java">
+      <option name="closed" value="true" />
+      <created>1696843343166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696843343166</updated>
+    </task>
+    <task id="LOCAL-00003" summary="+bai tai ss2">
+      <option name="closed" value="true" />
+      <created>1696925953027</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696925953027</updated>
+    </task>
+    <task id="LOCAL-00004" summary="*fix PrimeUnder100.java">
+      <option name="closed" value="true" />
+      <created>1696992876355</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696992876355</updated>
+    </task>
+    <task id="LOCAL-00005" summary="*fix feedback">
+      <option name="closed" value="true" />
+      <created>1696995440365</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696995440365</updated>
+    </task>
+    <task id="LOCAL-00006" summary="+ss4">
+      <option name="closed" value="true" />
+      <created>1696999448886</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696999448886</updated>
+    </task>
+    <task id="LOCAL-00007" summary="+ss5">
+      <option name="closed" value="true" />
+      <created>1697016925168</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697016925168</updated>
+    </task>
+    <task id="LOCAL-00008" summary="*fix ss4">
+      <option name="closed" value="true" />
+      <created>1697078584271</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697078584271</updated>
+    </task>
+    <task id="LOCAL-00009" summary="*fix ss5">
+      <option name="closed" value="true" />
+      <created>1697078792278</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697078792278</updated>
+    </task>
+    <task id="LOCAL-00010" summary="*fix feedback ss4">
+      <option name="closed" value="true" />
+      <created>1697169878373</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697169878373</updated>
+    </task>
+    <task id="LOCAL-00011" summary="+ss6 practices">
+      <option name="closed" value="true" />
+      <created>1697182064462</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697182064462</updated>
+    </task>
+    <task id="LOCAL-00012" summary="+ss8 Calculator">
+      <option name="closed" value="true" />
+      <created>1697516661536</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1697516661536</updated>
+    </task>
+    <task id="LOCAL-00013" summary="*fix feedback">
+      <option name="closed" value="true" />
+      <created>1697526133195</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697526133195</updated>
+    </task>
+    <task id="LOCAL-00014" summary="*fix feedback ss6">
+      <option name="closed" value="true" />
+      <created>1697597007578</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697597007578</updated>
+    </task>
+    <task id="LOCAL-00015" summary="*fix ss7">
+      <option name="closed" value="true" />
+      <created>1697597269234</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1697597269234</updated>
+    </task>
+    <task id="LOCAL-00016" summary="+ss10 MyList">
+      <option name="closed" value="true" />
+      <created>1697622211932</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1697622211932</updated>
+    </task>
+    <task id="LOCAL-00017" summary="+ss8 prac and exer">
+      <option name="closed" value="true" />
+      <created>1697689023961</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1697689023961</updated>
+    </task>
+    <task id="LOCAL-00018" summary="*add Square and fix feedback ss7">
+      <option name="closed" value="true" />
+      <created>1697702791628</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1697702791628</updated>
+    </task>
+    <task id="LOCAL-00019" summary="*fix Square.java">
+      <option name="closed" value="true" />
+      <created>1697703423975</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1697703423975</updated>
+    </task>
+    <task id="LOCAL-00020" summary="*fix feedback TennisGame.java">
+      <option name="closed" value="true" />
+      <created>1697771190403</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1697771190403</updated>
+    </task>
+    <task id="LOCAL-00021" summary="+ss10">
+      <option name="closed" value="true" />
+      <created>1697775196149</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1697775196149</updated>
+    </task>
+    <task id="LOCAL-00022" summary="+ss11">
+      <option name="closed" value="true" />
+      <created>1697796309730</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1697796309730</updated>
+    </task>
+    <task id="LOCAL-00023" summary="*Update ss11 ArrayReverse.java">
+      <option name="closed" value="true" />
+      <created>1697796693714</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1697796693714</updated>
+    </task>
+    <task id="LOCAL-00024" summary="*Update ss11 practices.">
+      <option name="closed" value="true" />
+      <created>1698032885928</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1698032885928</updated>
+    </task>
+    <task id="LOCAL-00025" summary="*Update ss12 practices.">
+      <option name="closed" value="true" />
+      <created>1698119452863</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1698119452863</updated>
+    </task>
+    <task id="LOCAL-00026" summary="*Update ss11 practices.">
+      <option name="closed" value="true" />
+      <created>1698131926846</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1698131926846</updated>
+    </task>
+    <task id="LOCAL-00027" summary="+ss13 practices.">
+      <option name="closed" value="true" />
+      <created>1698203869865</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1698203869865</updated>
+    </task>
+    <task id="LOCAL-00028" summary="+ss14 practices.">
+      <option name="closed" value="true" />
+      <created>1698217072844</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1698217072844</updated>
+    </task>
+    <task id="LOCAL-00029" summary="*fix mvc ss12">
+      <option name="closed" value="true" />
+      <created>1698228868591</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1698228868591</updated>
+    </task>
+    <task id="LOCAL-00030" summary="*fix mvc ss12">
+      <option name="closed" value="true" />
+      <created>1698306001091</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1698306001091</updated>
+    </task>
+    <task id="LOCAL-00031" summary="*fix menu mvc ss12">
+      <option name="closed" value="true" />
+      <created>1698308293928</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1698308293928</updated>
+    </task>
+    <task id="LOCAL-00032" summary="*update ss15">
+      <option name="closed" value="true" />
+      <created>1698375263071</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1698375263071</updated>
+    </task>
+    <task id="LOCAL-00033" summary="*update ss12 exception">
+      <option name="closed" value="true" />
+      <created>1698397826664</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1698397826664</updated>
+    </task>
+    <task id="LOCAL-00034" summary="+ss16 practice.">
+      <option name="closed" value="true" />
+      <created>1698398684059</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1698398684059</updated>
+    </task>
+    <task id="LOCAL-00035" summary="+ss16 practice.">
+      <option name="closed" value="true" />
+      <created>1698398699719</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1698398699719</updated>
+    </task>
+    <task id="LOCAL-00036" summary="+ss16 more practice.">
+      <option name="closed" value="true" />
+      <created>1698399341231</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1698399341231</updated>
+    </task>
+    <task id="LOCAL-00037" summary="*fix ss15 feedback">
+      <option name="closed" value="true" />
+      <created>1698634435355</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1698634435355</updated>
+    </task>
+    <task id="LOCAL-00038" summary="*fix ss15 feedback">
+      <option name="closed" value="true" />
+      <created>1698635842279</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1698635842279</updated>
+    </task>
+    <task id="LOCAL-00039" summary="*fix ss16">
+      <option name="closed" value="true" />
+      <created>1698650248507</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1698650248507</updated>
+    </task>
+    <task id="LOCAL-00040" summary="+ss17 practices">
+      <option name="closed" value="true" />
+      <created>1698661103081</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1698661103081</updated>
+    </task>
+    <task id="LOCAL-00041" summary="*fix feedback ss16">
+      <option name="closed" value="true" />
+      <created>1698719715393</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1698719715393</updated>
+    </task>
+    <task id="LOCAL-00042" summary="*update ss17 practice.">
+      <option name="closed" value="true" />
+      <created>1698727536025</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1698727536025</updated>
+    </task>
+    <task id="LOCAL-00043" summary="+ss19 practices.">
+      <option name="closed" value="true" />
+      <created>1698741689019</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1698741689019</updated>
+    </task>
+    <task id="LOCAL-00044" summary="*ss19 fix dir">
+      <option name="closed" value="true" />
+      <created>1698741766988</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1698741766988</updated>
+    </task>
+    <task id="LOCAL-00045" summary="+case study struc">
+      <option name="closed" value="true" />
+      <created>1698747583032</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1698747583032</updated>
+    </task>
+    <task id="LOCAL-00046" summary="-remove stuff">
+      <option name="closed" value="true" />
+      <created>1698811789925</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1698811789925</updated>
+    </task>
+    <task id="LOCAL-00047" summary="*fix feedback ss17.">
+      <option name="closed" value="true" />
+      <created>1698824308639</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1698824308639</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="*fix Square.java" />
+    <MESSAGE value="*fix feedback TennisGame.java" />
+    <MESSAGE value="+ss10" />
+    <MESSAGE value="+ss11" />
+    <MESSAGE value="*Update ss11 ArrayReverse.java" />
+    <MESSAGE value="*Update ss12 practices." />
+    <MESSAGE value="*Update ss11 practices." />
+    <MESSAGE value="+ss13 practices." />
+    <MESSAGE value="+ss14 practices." />
+    <MESSAGE value="*fix mvc ss12" />
+    <MESSAGE value="*fix menu mvc ss12" />
+    <MESSAGE value="*update ss15" />
+    <MESSAGE value="*update ss12 exception" />
+    <MESSAGE value="+ss16 practice." />
+    <MESSAGE value="+ss16 more practice." />
+    <MESSAGE value="*fix ss15 feedback" />
+    <MESSAGE value="*fix ss16" />
+    <MESSAGE value="+ss17 practices" />
+    <MESSAGE value="*fix feedback ss16" />
+    <MESSAGE value="*update ss17 practice." />
+    <MESSAGE value="+ss19 practices." />
+    <MESSAGE value="*ss19 fix dir" />
+    <MESSAGE value="+case study struc" />
+    <MESSAGE value="-remove stuff" />
+    <MESSAGE value="*fix feedback ss17." />
+    <option name="LAST_COMMIT_MESSAGE" value="*fix feedback ss17." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.InternalError" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.CloneNotSupportedException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.EmptyStackException" package="java.util" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ss17/exer/writingBigFiles/Main.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ss17/prac/product_manager_binary_io/view/ProductMenu.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ss17/prac/product_manager_binary_io/repository/IProductRepository.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/module_2$Scratch.ic" NAME="Scratch Coverage Results" MODIFIED="1697620269050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

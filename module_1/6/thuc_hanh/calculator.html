@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+A <input type="number" id="InputA">
+<br><br>
+B <input type="number" id="InputB">
+<br><br>
+<button onclick="sum()">+</button>
+<button onclick="sub()">-</button>
+<button onclick="mul()">*</button>
+<button onclick="div()">/</button>
+<p id="result"></p>
+
+<script>
+    function sum() {
+        a = +document.getElementById("InputA").value;
+        b = +document.getElementById("InputB").value;
+        resultS = a + b;
+        document.getElementById("result").innerText = resultS;
+    }
+    function sub() {
+        a = +document.getElementById("InputA").value;
+        b = +document.getElementById("InputB").value;
+        resultS = a - b;
+        document.getElementById("result").innerText = resultS;
+    }
+    function mul() {
+        a = +document.getElementById("InputA").value;
+        b = +document.getElementById("InputB").value;
+        resultS = a * b;
+        document.getElementById("result").innerText = resultS;
+    }
+    function div() {
+        a = +document.getElementById("InputA").value;
+        b = +document.getElementById("InputB").value;
+        resultS = a / b;
+        document.getElementById("result").innerText = resultS;
+    }
+</script>
+</body>
+</html>

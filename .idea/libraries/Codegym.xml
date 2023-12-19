@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Codegym">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ss8_mvc.zip!/" />
+      <root url="jar://$PROJECT_DIR$/demo_mvc.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
