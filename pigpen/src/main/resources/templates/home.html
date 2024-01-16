@@ -11,7 +11,31 @@
 </head>
 <body>
 
-<a class="btn btn-primary">Test</a>
+<form th:action="@{/pen/add}" th:object="${pen}" method="post">
+    <label>
+        Type
+        <input class="form-control" type="text" th:field="*{type}">
+    </label>
+    <br>
+    <label>
+        Capacity
+        <input type="number" class="form-control" th:field="*{capacity}">
+    </label>
+    <button type="submit" class="btn btn-primary">Add new pen</button>
+</form>
+
+<table class="table">
+    <tr>
+        <th>No.</th>
+        <th>Pen type</th>
+        <th>Capacity</th>
+    </tr>
+    <tr th:each="pen,loop:${pens}">
+        <td th:text="${loop.count}"></td>
+        <td th:text="${pen.type}"></td>
+        <td th:text="${pen.capacity}"></td>
+    </tr>
+</table>
 Đối tượng "Chuồng"
 ID chuồng
 Loại chuồng (ví dụ: chuồng nuôi heo nái, chuồng nuôi heo đực, vv.)
