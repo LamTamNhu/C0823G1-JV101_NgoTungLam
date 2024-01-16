@@ -13,8 +13,11 @@ public class IngredientController {
     }
 
     @GetMapping("/save")
-    public String save(@RequestParam String[] condiments, Model model) {
+    public String save(@RequestParam (defaultValue = "") String[] condiments, Model model) {
+        for (String e : condiments) {
+            System.out.println(e);
+        }
         model.addAttribute("condiments", condiments);
-        return "index";
+        return "result";
     }
 }
